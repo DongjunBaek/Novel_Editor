@@ -8,9 +8,9 @@ function BoardList(props) {
             <h3>BoardList</h3>
             <div className="boardList-container">
                 
-                <table>
-                    <thead>
-                        <tr>
+                <table className="border test BoardTable">
+                    <thead className="border flex">
+                        <tr className="flex">
                             <th>번호</th>
                             <th>제목</th>                            
                             <th>작성자</th>                            
@@ -20,7 +20,12 @@ function BoardList(props) {
                         </tr>
                     </thead>
                     <tbody>
-
+                        <td>1</td>
+                        <td>Title</td>
+                        <td>writer</td>
+                        <td>20-07-31</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tbody>
                     <tfoot>
 

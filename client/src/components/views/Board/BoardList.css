@@ -1,3 +1,41 @@
+/* common */
+.border {
+    border: 1px solid orangered;    
+}
+.flex {
+    display: flex;
+}
+
+/* BoardList */
+.BoardTable {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+}
+
+.BoardTable thead{    
+    display: flex;
+    flex: 1;
+    height: 36px;
+}
+
+.BoardTable tr {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border: 1px solid orangered;    
+}
+
+.BoardTable th, .BoardTable td {
+    display: flex;
+    flex: 1;
+    border: orangered 1px solid;
+    height: 36px;
+}
+
+
+
 .boardList-container{
     display: flex;
     width: 800px;
@@ -5,3 +43,4 @@
     border: 1px solid red;
     
 }
+
