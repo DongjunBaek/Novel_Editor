@@ -1,0 +1,11 @@
+.BoardDetail-section{
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+}
+
+.BoardDetail-artcle {
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
