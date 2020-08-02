@@ -9,3 +9,39 @@
     width: 80%;
     height: 80%;
 }
+
+.BoardDetail-artcle{
+    display: flex;
+}
+
+.board-container{
+    display: flex;
+}
+
+.board-sideBa{
+    display: flex;
+}
+
+.board-sideBar-ul{
+    display: flex;
+}
+
+.board-content{
+    display: flex;
+}
+
+.board-info{
+    display: flex;
+}
+
+.board-info-ul{
+    display: flex;
+}
+
+.board-title{
+    display: flex;
+}
+
+.board-text{
+    display: flex;
+}
