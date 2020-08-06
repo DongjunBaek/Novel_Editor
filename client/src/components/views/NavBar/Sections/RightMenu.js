@@ -42,7 +42,10 @@ function RightMenu(props) {
     return (
       <Menu mode = {props.mode}>
         <Menu.Item key ="boardList">      
-          <a href = "/BoardList">BoardList</a>
+            <a href = "/BoardList">BoardList</a>
+        </Menu.Item>
+        <Menu.Item key ="NovelList">      
+            <a href = "/NovelList">NovelList</a>
         </Menu.Item>
       </Menu>
     )

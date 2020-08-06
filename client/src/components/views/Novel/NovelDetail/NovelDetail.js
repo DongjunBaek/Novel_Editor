@@ -1,11 +1,11 @@
 import React from 'react'
 
-function SideMenu() {
+function NovelDetail() {
     return (
         <div>
-            SideMenu
+            NovelDetail
         </div>
     )
 }
 
-export default SideMenu
+export default NovelDetail

@@ -9,6 +9,8 @@ import NavBar from "./views/NavBar/NavBar";
 import Footer from "./views/Footer/Footer";
 import BoardList from "./views/Board/BoardList";
 import boardDetail from"./views/Board/BoardDetail/BoardDetail";
+import NovelList from "./views/Novel/NovelList";
+import NovelDetail from "./views/Novel/NovelDetail/NovelDetail";
 //null   Anyone Can go inside
 //true   only logged in user can go inside
 //false  logged in user can't go inside
@@ -24,6 +26,7 @@ function App() {
           <Route exact path="/register" component={Auth(RegisterPage, false)} />
           <Route exact path="/boardList" component = {Auth(BoardList, false)} />
           <Route exact path="/boardDetail" component={Auth(boardDetail, false)}  />
+          <Route exact path="/NovelList" component = {Auth(NovelList, false)} />
         </Switch>
       </div>
       <Footer />
