@@ -1,7 +1,6 @@
 import React from 'react'
 import '../Board/BoardList.css'
 import { Link } from "react-router-dom";
-import BoardDetail from '../Board/BoardDetail/BoardDetail';
 
 function BoardList(props) {
 

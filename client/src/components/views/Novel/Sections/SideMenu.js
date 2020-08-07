@@ -1,10 +1,10 @@
 import React from 'react'
-
+import '../Sections/SideMenu.css';
 function SideMenu() {
     return (
-        <div>
+        <article className="novelDetail-sideMenu">
             SideMenu
-        </div>
+        </article>
     )
 }
 
