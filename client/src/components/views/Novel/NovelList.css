@@ -27,23 +27,24 @@
     height: 100%;
 }
 
-.BoardTable thead{    
+.NovelTable thead{    
     display: flex;    
     height: 36px;
 }
 
-.BoardTable tbody{    
+.NovelTable tbody{    
     display: flex;
     flex-direction: column;
 }
-.BoardTable tr {
+.NovelTable tr {
+    width: 100;
     display: flex;
     flex: 1;
     flex-direction: row;
     /* border: 1px solid orangered;     */
 }
 
-.BoardTable th, .BoardTable td {
+.NovelTable th, .NovelTable td {
     display: flex;
     flex: 1;
     /* border: orangered 1px solid; */

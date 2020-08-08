@@ -1,16 +1,14 @@
 import React from 'react'
-import SideMenu from './Sections/SideMenu';
 import { Link } from "react-router-dom";
 import '../Novel/NovelList.css';
 
 function NovelList() {
     return (
         <section className="novelList-section border">
-        <SideMenu />
             <article className="novelList-article">
                 <div className="novelList-container">
                     <table className="NovelTable">
-                        <thead className="">                            
+                        <thead className="">
                             <tr className="" >
                                 <th>번호</th>
                                 <th>제목</th>
@@ -21,16 +19,16 @@ function NovelList() {
                             </tr>
                         </thead>
                         <tbody>
-                            <Link to="/novelDetail">
-                                <tr >
+                            <tr >
+                                
                                     <td>1</td>
-                                    <td>Title</td>
+                                    <td><Link to="/novelDetail">Title</Link></td>
                                     <td>writer</td>
                                     <td>20-07-31</td>
                                     <td>0</td>
                                     <td>0</td>
-                                </tr>
-                            </Link>
+                                
+                            </tr>
                             <tr>
                                 <td>1</td>
                                 <td>Title</td>

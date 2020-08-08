@@ -1,9 +1,0 @@
-.novelDetail-sideMenu {
-    position: relative;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid cornflowerblue;
-    /* width: 100px; */
-}

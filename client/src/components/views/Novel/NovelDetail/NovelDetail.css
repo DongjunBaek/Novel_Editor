@@ -1,0 +1,19 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.NovelDetail-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+.Novel-article{
+    display : flex;
+    width: 90%;
+}
+/* test */
+.test {
+    border: 1px solid orangered;
+}
