@@ -12,7 +12,16 @@
 .Novel-article{
     display : flex;
     width: 90%;
+    flex-direction: column;
 }
+.Novel-info {
+    display : flex;
+    
+}
+.Novel-info-ul{
+    list-style-type: none;
+}
+
 /* test */
 .test {
     border: 1px solid orangered;
