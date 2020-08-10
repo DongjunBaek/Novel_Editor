@@ -11,6 +11,7 @@ import BoardList from "./views/Board/BoardList";
 import boardDetail from"./views/Board/BoardDetail/BoardDetail";
 import NovelList from "./views/Novel/NovelList";
 import novelDetail from "./views/Novel/NovelDetail/NovelDetail";
+import Signup from "./views/Signup/Signup";
 //null   Anyone Can go inside
 //true   only logged in user can go inside
 //false  logged in user can't go inside
@@ -28,6 +29,7 @@ function App() {
           <Route exact path="/boardDetail" component={Auth(boardDetail, false)}  />
           <Route exact path="/NovelList" component = {Auth(NovelList, false)} />
           <Route exact path="/novelDetail" component = {Auth(novelDetail, false)} />
+          <Route exact path="/signup" component = {Auth(Signup, false)} />
 
         </Switch>
       </div>

@@ -47,6 +47,9 @@ function RightMenu(props) {
         <Menu.Item key ="NovelList">      
             <a href = "/NovelList">NovelList</a>
         </Menu.Item>
+        <Menu.Item key ="signup">      
+            <a href = "/signup">sign up</a>
+        </Menu.Item>
       </Menu>
     )
 }
