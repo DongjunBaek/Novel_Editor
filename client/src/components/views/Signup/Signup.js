@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState} from 'react'
 import '../Signup/Signup.css';
 
 function Signup() {
 
+    const [Email, setEmail] = useState('')
+
+    const onEmailHandler = (e) => {
+        setEmail(e.target.value);
+        console.log(Email)
+    };
 
 
 
@@ -13,7 +19,7 @@ function Signup() {
                     <from className="signup-form">
                         <div className="signup-form-input">
                             <ul>
-                                <li>Email : <input type="text" /> </li>
+                                <li>Email : <input type="text" onChange={onEmailHandler} /> </li>
                                 <li>Name : <input type="text" /></li>
                                 <li>password  : <input type="password" /></li>
                                 <li>password Check  : <input type="password" /></li>
