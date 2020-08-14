@@ -4,8 +4,21 @@ import {
     REGISTER_USER,
     AUTH_USER,
     LOGOUT_USER,
+    SIGNUP_USER
 } from './types';
 import { USER_SERVER } from '../components/Config.js';
+
+export function SignupUser(userData){
+
+    const request = axios.post(`${USER_SERVER}/signup`, userData)
+        .then(response => response.data);
+    console.log(userData);
+
+    return {
+        type : SIGNUP_USER,
+        payload  : request
+    }
+}
 
 export function registerUser(dataToSubmit){
     const request = axios.post(`${USER_SERVER}/register`,dataToSubmit)

@@ -1,5 +1,7 @@
 import React, { useState} from 'react'
 import '../Signup/Signup.css';
+import { SignupUser } from "../../../_actions/user_actions";
+import { useDispatch } from "react-redux";
 
 function Signup() {
 
@@ -10,8 +12,6 @@ function Signup() {
     const [Password, setPassword] = useState('');
 
     const [PasswordChk, setPasswordChk] = useState('');
-
-
 
     const onEmailHandler = (e) => {
         setEmail(e.target.value);
@@ -29,6 +29,8 @@ function Signup() {
         setPasswordChk(e.target.value);
         console.log(PasswordChk)
     };
+    
+    const dispatch = useDispatch();
 
     const onSignUpSumbit = () => {
         let body = {
@@ -37,8 +39,13 @@ function Signup() {
             password : Password
         }
 
-        console.log('Input values', body)
-        return false;
+        
+        // console.log('Input values', body)
+        return (
+                dispatch(SignupUser(body)).then(response => {
+                    console.log(response.payload)
+                })
+        )
     }
 
 
