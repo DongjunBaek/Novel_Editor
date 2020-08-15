@@ -2,8 +2,9 @@ import React, { useState} from 'react'
 import '../Signup/Signup.css';
 import { SignupUser } from "../../../_actions/user_actions";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
-function Signup() {
+function Signup(props) {
 
     const [Email, setEmail] = useState('');
     
@@ -39,11 +40,16 @@ function Signup() {
             password : Password
         }
 
-        
         // console.log('Input values', body)
         return (
                 dispatch(SignupUser(body)).then(response => {
                     console.log(response.payload)
+                    if(response.payload.success){
+                        console.log('success', response.payload.success)
+                        props.history.push("/");
+                    }else {
+                        alert('Failed Sign up')
+                    }
                 })
         )
     }
