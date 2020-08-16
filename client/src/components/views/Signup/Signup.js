@@ -46,7 +46,7 @@ function Signup(props) {
                     console.log(response.payload)
                     if(response.payload.success){
                         console.log('success', response.payload.success)
-                        props.history.push("/");
+                        props.history.push("/Success");
                     }else {
                         alert('Failed Sign up')
                     }
