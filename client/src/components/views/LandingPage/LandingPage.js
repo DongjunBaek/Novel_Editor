@@ -1,15 +1,17 @@
-import React from 'react'
-import { FaCode } from "react-icons/fa";
+import React from 'react';
+import '../LandingPage/LandingPage.css';
 
 function LandingPage() {
     return (
-        <>
-            <div className="app">
-                <FaCode style={{ fontSize: '4rem' }} /><br />
-                <span style={{ fontSize: '2rem' }}>Let's Start Coding!</span>
+            <div className="app landing-container">
+                <img src="/background/test01.jpg" id="landingPage-bg" />
+                <img src=''></img>
+                <article>
+                </article>
+                <article>
+                    <div style={{ float: 'right' }}>Thanks For Using This Boiler Plate by John Ahn</div>
+                </article>
             </div>
-            <div style={{ float: 'right' }}>Thanks For Using This Boiler Plate by John Ahn</div>
-        </>
     )
 }
 
