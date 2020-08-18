@@ -4,12 +4,13 @@ import '../LandingPage/LandingPage.css';
 function LandingPage() {
     return (
             <div className="app landing-container">
-                <img src="/background/test01.jpg" id="landingPage-bg" />
-                <img src=''></img>
-                <article>
+                {/* <img src="/background/books.jpg" id="landingPage-bg" />
+                <img src=''></img> */}
+                <article className="landing-left">                    
+                    <h1>N</h1>
                 </article>
-                <article>
-                    <div style={{ float: 'right' }}>Thanks For Using This Boiler Plate by John Ahn</div>
+                <article className="landing-right">
+                    <h2>ovel Editor</h2>
                 </article>
             </div>
     )
