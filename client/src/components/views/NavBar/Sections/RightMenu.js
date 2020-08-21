@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import { Menu } from 'antd';
 import axios from 'axios';
 import { USER_SERVER } from '../../../Config';
 import { withRouter } from 'react-router-dom';
 import { useSelector } from "react-redux";
+import '../Sections/Navbar.css' 
 
 function RightMenu(props) {
   const user = useSelector(state => state.user)
@@ -18,39 +18,14 @@ function RightMenu(props) {
       }
     });
   };
-
-  // if (user.userData && !user.userData.isAuth) {
-  //   return (
-  //     <Menu mode={props.mode}>
-  //       <Menu.Item key="mail">
-  //         <a href="/login">Signin</a>
-  //       </Menu.Item>
-  //       <Menu.Item key="app">
-  //         <a href="/register">Signup</a>
-  //       </Menu.Item>
-  //     </Menu>
-  //   )
-  // } else {
-  //   return (
-  //     <Menu mode={props.mode}>
-  //       <Menu.Item key="logout">
-  //         <a onClick={logoutHandler}>Logout</a>
-  //       </Menu.Item>
-  //     </Menu>
-  //   )
-  // }
     return (
-      <Menu mode = {props.mode}>
-        <Menu.Item key ="boardList">      
-            <a href = "/BoardList">BoardList</a>
-        </Menu.Item>
-        <Menu.Item key ="NovelList">      
-            <a href = "/NovelList">NovelList</a>
-        </Menu.Item>
-        <Menu.Item key ="signup">      
-            <a href = "/signup">sign up</a>
-        </Menu.Item>
-      </Menu>
+      <div className="nav">
+          <ul className="nav-ul">
+              <li><a href = "/BoardList">BoardList</a></li>
+              <li><a href = "/NovelList">NovelList</a></li>
+              <li><a href = "/signup">sign up</a></li>
+          </ul>
+      </div>
     )
 }
 

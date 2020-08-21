@@ -69,6 +69,35 @@
     justify-content: left;
     /* border: 1px solid red; */
 }
+
+.landing-right-1{
+    display: flex;
+    /* border: 1px solid coral; */
+    width: 350px;
+    height: 22%;
+    background-color: #e7e9ee;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    display: flex;
+    transform :skew(0deg,30deg);
+    /* transform : matrix(2, 2, 0, 2, 45, 0); */
+    top: -15%;
+    right: -15%;
+    position: relative;
+}
+.landing-right-1 h2{
+    font-size: 3em;
+    margin: 0px;
+    padding: 0px;
+    height: 50%;     
+    display: flex;
+    color: #413e7d;
+    /* transform :skew(0deg,-10deg); */
+    justify-content: center;
+    align-self: center;
+    /* border: 1px solid red; */
+}
 .landing-side{
     /*  */
     position: absolute;
