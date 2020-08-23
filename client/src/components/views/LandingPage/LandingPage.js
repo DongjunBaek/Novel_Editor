@@ -17,11 +17,11 @@ function LandingPage() {
                 </article>
 
                 <article className="landing-side"> 
-                    <span> 1 . Text Editor For Novel Writer</span>
-                    <span> 2 . UI/UX design</span>
-                    <span> 3 . Adding illustrations to character lines</span>
-                    <span> 4 . Make Character Setting</span>
-                    <span> 5 . Easy Use </span>
+                    <span className="hexagon"> Novel Writer</span>
+                    <span className="hexagon"> UI/UX </span>
+                    <span className="hexagon"> Illustrations</span>
+                    <span className="hexagon"> Setting</span>
+                    <span className="hexagon"> Easy Use </span>
                 </article>
             </div>
     )
