@@ -9,11 +9,11 @@ function LandingPage() {
                 <article className="landing-content-left">
                     <img src={require('../LandingPage/img/back_03.jpg')} />
                     <div className="content-left-div">
-                        <span className="hexagon"> Novel Writer</span>
-                        <span className="hexagon"> UI/UX </span>
-                        <span className="hexagon"> Illustrations</span>
-                        <span className="hexagon"> Setting</span>
-                        <span className="hexagon"> Easy Use </span>
+                        <span className="left-div-span-1"> Story Planet</span>
+                        <span className="left-div-span-2"> UI/UX </span>
+                        <span className="left-div-span-3"> Illustrations</span>
+                        <span className="left-div-span-4"> Setting</span>
+                        <span className="left-div-span-5"> Easy Use </span>
                     </div>
                 </article>
                 <article className="landing-content-right">

@@ -37,6 +37,8 @@
     overflow: hidden;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    align-items: center;
+    justify-content: center;
 }
 
 .landing-content-left img {
@@ -53,8 +55,23 @@
     width: 85%;
     height: 70%;
     color: aliceblue;
-
+    flex-direction: column;
+    border: 1px solid orange;
+    overflow: hidden;
 }
+
+.left-div-span-title{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    font-size: 50px;
+    flex: 5;
+}
+.left-div-span-sub{
+    position: relative;
+    flex: 1;
+}
+
 
 .landing-content-right{
     position: relative;
