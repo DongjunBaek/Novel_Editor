@@ -9,15 +9,45 @@ function LandingPage() {
                 <article className="landing-content-left">
                     <img src={require('../LandingPage/img/back_03.jpg')} />
                     <div className="content-left-div">
-                        <span className="left-div-span-1"> Story Planet</span>
-                        <span className="left-div-span-2"> UI/UX </span>
-                        <span className="left-div-span-3"> Illustrations</span>
-                        <span className="left-div-span-4"> Setting</span>
-                        <span className="left-div-span-5"> Easy Use </span>
+                        <span className="left-div-span-title"> Story Planet</span>
+                        <span className="left-div-span-sub"> UI/UX IN Planet</span>
+                        <span className="left-div-span-sub"> Illustrations Support</span>
+                        <span className="left-div-span-sub"> Character Sheet</span>
+                        <span className="left-div-span-sub"> Accessibility</span>
                     </div>
                 </article>
                 <article className="landing-content-right">
-
+                    <div className="content-right-div-h">
+                        <h2>내가 원하는 기능을 직접 만들어 보자</h2>
+                        <span> 현재 나와있는 텍스트 에디터는 기본적인 게시글에 해당하는 텍스트 에디터이다.</span>
+                        <span> 그래서 소설을 작성하는 것을 도와주는 에디터를 찾고싶었지만 찾을 수 없었고, </span>
+                        <span> 실제로 직접 만들어서 사용하면 어떨까 라는 생각에서 출발하여 만들기로 했다.</span>                        
+                    </div>
+                    <div className="content-right-div-b">
+                        <h3> 인프런 강의를 통하여 React와 node.js 그리고 mongoDB를 활용한 웹프로젝트의 특성을 가지며</h3>
+                        <span> 공부한 것들을 실제로 결과물로 만들어 보기위한 목적도 있다.</span>
+                    </div>
+                    <div className="content-right-div-f">
+                        <h4> 추천 소설</h4>
+                        <div className="novel-card">
+                            <img />
+                            <div>
+                                <span>제목 내용 추천 수</span>
+                            </div>
+                        </div>
+                        <div className="novel-card">
+                            <img />
+                            <div>
+                                <span>제목 내용 추천 수</span>
+                            </div>
+                        </div>
+                        <div className="novel-card">
+                            <img />
+                            <div>
+                                <span>제목 내용 추천 수</span>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 {/* <article className="landing-side"> 
