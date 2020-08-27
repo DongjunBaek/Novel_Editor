@@ -1,7 +1,7 @@
 /* common */
 .test {
     /* border: 1px solid #ea6d30; */
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff; */
 }
 #main-container-back-img {
     position: absolute;
@@ -56,7 +56,7 @@
     height: 70%;
     color: aliceblue;
     flex-direction: column;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     overflow: hidden;
     align-items: center;
 }
@@ -82,10 +82,52 @@
     display: flex;
     width: 60%;
     height: 100%;
-    background-color:#c6dadb;
+    background-color:#ebebeb;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    flex-direction: column;    
+    overflow: hidden;
 }
+.content-right-container{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background-color:#ebebeb;
+    flex-direction: column;  
+    margin-left: 10%;  
+    margin-top: 5%;
+}
+.content-right-div-h{
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+    height: 25%;
+}
+
+.right-div-h-title{
+    position: relative;
+    display: flex;
+    height: 50%;
+    color: #374a5a;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+
+}
+.content-right-div-b{
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+}
+
+.content-right-div-f{
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+}
+
 /* deskTop  css*/
 @media screen and (min-width: 768px) {
 
