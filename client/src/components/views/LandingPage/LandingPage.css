@@ -103,8 +103,12 @@
     display: flex;
     flex-direction: column;    
     height: 25%;
+    margin-bottom: 10%;
 }
-
+.content-right-div-h .div-h-p{
+    font-size: 14px;
+    color: #374a5a;
+}
 .right-div-h-title{
     position: relative;
     display: flex;
@@ -112,7 +116,7 @@
     color: #374a5a;
     justify-content: center;
     align-items: center;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
 
 }
@@ -120,14 +124,44 @@
     position: relative;
     display: flex;
     flex-direction: column;    
+    height: 10%;
+    margin-bottom: 10%;
 }
-
+.right-div-b-title{
+    font-size: 12px;
+    color: #374a2a;
+}
 .content-right-div-f{
     position: relative;
     display: flex;
     flex-direction: column;    
+    height: 45%;
 }
-
+.right-div-f-title{
+    position: relative;
+    display: flex;
+    font-size: 20px;
+}
+/* common.css */
+.novel-card{    
+    position: relative;
+    display: flex;
+    width: 140px;
+    height: 120px;
+    flex-direction: column;
+}
+.novel-card-img{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+.novel-card-info{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
 /* deskTop  css*/
 @media screen and (min-width: 768px) {
 
