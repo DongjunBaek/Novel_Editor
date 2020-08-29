@@ -128,7 +128,7 @@
     margin-bottom: 10%;
 }
 .right-div-b-title{
-    font-size: 12px;
+    font-size: 20px;
     color: #374a2a;
 }
 .content-right-div-f{
@@ -140,21 +140,32 @@
 .right-div-f-title{
     position: relative;
     display: flex;
-    font-size: 20px;
+    font-size: 20px;    
 }
 /* common.css */
+.novel-card-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .novel-card{    
     position: relative;
     display: flex;
     width: 140px;
-    height: 120px;
+    height: 250px;
     flex-direction: column;
+    border-radius: 25px;
+    border: 1px solid royalblue;
+    overflow: hidden;        
+    
 }
 .novel-card-img{
     display: flex;
     width: 100%;
     height: 70%;
     position: relative;
+    
 }
 .novel-card-info{
     display: flex;

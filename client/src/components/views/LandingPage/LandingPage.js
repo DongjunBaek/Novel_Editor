@@ -25,27 +25,26 @@ function LandingPage() {
                             실제로 직접 만들어서 사용하면 어떨까 라는 생각에서 출발하여 만들기로 했다.</p>                        
                         </div>
                         <div className="content-right-div-b">
-                            <span className="right-div-b-title"> 인프런 강의를 통하여 React와 node.js 그리고 mongoDB를 활용한 웹프로젝트의 특성을 가지며</span>
-                            <p className="div-h-p"> 공부한 것들을 실제로 결과물로 만들어 보기위한 목적도 있다.</p>
+                            <span className="right-div-b-title"> React & node.js & mongoDB </span>
+                            <p className="div-h-p"> 새로운 환경에서 제작해보는 프로젝트 </p>
                         </div>
                         <div className="content-right-div-f">
                             <span className="right-div-f-title"> 추천 소설</span>
-                            <div className="novel-card">
-                                <img className="novel-card-img" src={require('../LandingPage/img/back_01.jpg')}/>
-                                <div>
-                                    <span>제목 내용 추천 수</span>
+                            <div className="novel-card-container">
+                                <div className="novel-card">
+                                    <img className="novel-card-img" src={require('../LandingPage/img/back_01.jpg')}/>
+                                    <div className="novel-card-info">
+                                        {/* <span>제목 내용 추천 수</span> */}
+                                        <span>Title</span>
+                                        <span>info</span>
+                                        <span>star</span>                                    
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="novel-card">
-                                <img />
-                                <div>
-                                    <span>제목 내용 추천 수</span>
+                                <div className="novel-card">
+
                                 </div>
-                            </div>
-                            <div className="novel-card">
-                                <img />
-                                <div>
-                                    <span>제목 내용 추천 수</span>
+                                <div className="novel-card">
+
                                 </div>
                             </div>
                         </div>
