@@ -32,19 +32,31 @@ function LandingPage() {
                             <span className="right-div-f-title"> 추천 소설</span>
                             <div className="novel-card-container">
                                 <div className="novel-card">
-                                    <img className="novel-card-img" src={require('../LandingPage/img/back_01.jpg')}/>
+                                    <img className="novel-card-img" src={require('../LandingPage/img/back_05.jpg')}/>
                                     <div className="novel-card-info">
                                         {/* <span>제목 내용 추천 수</span> */}
-                                        <span>Title</span>
-                                        <span>info</span>
-                                        <span>star</span>                                    
+                                        <span> 오늘은 그레이 블루</span>
+                                        <span>상상속에서 색깔이 현실에 입혀진다. 내마음의 색은?</span>
+                                        <span>★★★☆☆</span>                                    
                                     </div>
                                 </div>
                                 <div className="novel-card">
-
+                                    <img className="novel-card-img" src={require('../LandingPage/img/back_06.jpg')}/>
+                                    <div className="novel-card-info">
+                                        {/* <span>제목 내용 추천 수</span> */}
+                                        <span> 오늘은 그레이 블루</span>
+                                        <span>상상속에서 색깔이 현실에 입혀진다. 내마음의 색은?</span>
+                                        <span>★★★☆☆</span>                                    
+                                    </div>
                                 </div>
                                 <div className="novel-card">
-
+                                    <img className="novel-card-img" src={require('../LandingPage/img/back_07.jpg')}/>
+                                    <div className="novel-card-info">
+                                        {/* <span>제목 내용 추천 수</span> */}
+                                        <span> 오늘은 그레이 블루</span>
+                                        <span>상상속에서 색깔이 현실에 입혀진다. 내마음의 색은?</span>
+                                        <span>★★★☆☆</span>                                    
+                                    </div>
                                 </div>
                             </div>
                         </div>
