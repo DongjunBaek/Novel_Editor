@@ -20,7 +20,7 @@ import Success from './views/Signup/Success';
 function App() {
   return (
     <Suspense fallback={(<div>Loading...</div>)}>
-      {/* <NavBar /> */}
+      <NavBar />
       <div style={{minHeight: 'calc(100vh - 80px)' }}>
         <Switch>
           <Route exact path="/" component={Auth(LandingPage, null)} />
