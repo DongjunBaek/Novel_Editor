@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect  } from 'react';
 import { Route, Switch, Link } from "react-router-dom";
 import Auth from "../hoc/auth";
 // pages for this product
@@ -17,11 +17,29 @@ import Success from './views/Signup/Success';
 //true   only logged in user can go inside
 //false  logged in user can't go inside
 
+
+
+
 function App() {
+
+  useEffect(() => {
+
+    let calHeigth = (nowHeight) => {
+      let wholeHeight = 0;
+      let appHeight = document.getElementById("app-container");
+      console.log('appHeight', appHeight);
+      console.log('appHeight', appHeight.getPropertyValue('height'));
+    }
+
+    calHeigth();
+
+
+  })
+
   return (
     <Suspense fallback={(<div>Loading...</div>)}>
       <NavBar />
-      <div style={{minHeight: 'calc(100vh - 80px)' }}>
+      <div id="app-container">
         <Switch>
           <Route exact path="/" component={Auth(LandingPage, null)} />
           <Route exact path="/login" component={Auth(LoginPage, false)} />

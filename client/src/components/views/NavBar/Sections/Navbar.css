@@ -5,8 +5,9 @@
   display: flex;
   width: 100%;
   height: 80px;
-  position: absolute;
-  z-index: 1;
+  position: relative;
+  /* z-index: 1; */
+  background-color: #111;
 }
 .nav-ul{
   display: flex;
@@ -37,6 +38,7 @@
 .nav-ul li a:visited{
   color: #ebebeb;
 }
+
 /* @media (max-width: 767px) {
   .menu__mobile-button {
     display: inline-block !important;
