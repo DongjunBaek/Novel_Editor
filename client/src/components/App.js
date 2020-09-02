@@ -28,7 +28,7 @@ function App() {
       let wholeHeight = 0;
       let appHeight = document.getElementById("app-container");
       console.log('appHeight', appHeight);
-      console.log('appHeight', appHeight.getPropertyValue('height'));
+      
     }
 
     calHeigth();

@@ -7,6 +7,7 @@ function NavBar() {
   return (
     <div className="nav">
       <ul className="nav-ul">
+        <li><a href="/">HOME</a></li>
         <li><a href="/BoardList">BoardList</a></li>
         <li><a href="/NovelList">NovelList</a></li>
         <li><a href="/signup">sign up</a></li>

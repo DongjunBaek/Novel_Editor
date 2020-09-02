@@ -16,7 +16,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #24292e;
-  background-color: #fff;
+  background-color: #111;
 }
 
 .app {
@@ -25,7 +25,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  top: -80px;
 }
 
 input.error {

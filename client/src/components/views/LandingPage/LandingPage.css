@@ -24,8 +24,8 @@
 .landing-cotainer{
     position: relative;
     display: flex;
-    width: 75vw;
-    height: 80vh;
+    width: 1280px;
+    height: 720px;
     /* background-color: #fcdcc7; */
 }
 
@@ -152,7 +152,7 @@
 .novel-card{    
     position: relative;
     display: flex;
-    width: 140px;
+    width: 200px;
     height: 250px;
     flex-direction: column;
     border-radius: 25px;

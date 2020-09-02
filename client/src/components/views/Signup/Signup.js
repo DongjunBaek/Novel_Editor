@@ -56,9 +56,12 @@ function Signup(props) {
 
 
     return (
-        <section className="signup-section">
+        <section className="signup-section">            
             <article className="signup-article">
-                <div className="signup-container">
+                <div className="signup-article-left">
+                    <img src={require('../Signup/signup_01.jpg')} />
+                </div>
+                <div className="signup-article-right">
                     <form className="signup-form">
                         <div className="signup-form-input">
                             <ul>
