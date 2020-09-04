@@ -63,22 +63,61 @@ function Signup(props) {
                 </div>
                 <div className="signup-article-right">
                     <form className="signup-form">
-                        <div className="signup-form-input">
-                            <ul>
-                                <li>Email : <input type="text" onChange={onEmailHandler} /> </li>
-                                <li>Name : <input type="text" onChange={onNameHandler} /></li>
-                                <li>password  : <input type="password" onChange={onPasswordHandler} /></li>
-                                <li>password Check  : <input type="password" onChange={onPasswordChkHandler} /></li>
-                            </ul>
-                        </div>
-                        <div className="signup-form-preview">
-                            <ul>
-                                <li><img src="" /></li>
-                                <li> Profile Image Upload --> <input type="file" /></li>
-                                <li><button type="button" onClick={onSignUpSumbit}>Sign Up</button></li>
-                            </ul>
-                        </div>
-                    
+                        <table className="signup-form-table">
+                            <thead>
+                                <tr>Welcome To Story Planet</tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Email
+                                    </td>
+                                    <td>
+                                        <input type="text" onChange={onEmailHandler} />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Name
+                                    </td>
+                                    <td>
+                                    <input type="text" onChange={onNameHandler} />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        password
+                                    </td>
+                                    <td>
+                                        <input type="text" onChange={onPasswordHandler} />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        password Check
+                                    </td>
+                                    <td>
+                                        <input type="text" onChange={onPasswordChkHandler} />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Profile Image Upload -->
+                                    </td>
+                                    <td>
+                                        <input type="file" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" onClick={onSignUpSumbit}>Sign Up</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr></tr>
+                            </tfoot>
+                        </table>                    
                     </form>
                 </div>
             </article>
