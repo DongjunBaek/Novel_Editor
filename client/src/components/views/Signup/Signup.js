@@ -56,7 +56,7 @@ function Signup(props) {
 
 
     return (
-        <section className="signup-section">            
+        <section className="app main-container">            
             <article className="signup-article">
                 <div className="signup-article-left">
                     <img src={require('../Signup/signup_01.jpg')} />
@@ -65,7 +65,9 @@ function Signup(props) {
                     <form className="signup-form">
                         <table className="signup-form-table">
                             <thead>
-                                <tr>Welcome To Story Planet</tr>
+                                <tr>
+                                    <td>Welcome To Story Planet</td>
+                                </tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -81,7 +83,7 @@ function Signup(props) {
                                         Name
                                     </td>
                                     <td>
-                                    <input type="text" onChange={onNameHandler} />
+                                        <input type="text" onChange={onNameHandler} />
                                     </td>
                                 </tr>
                                 <tr>
@@ -108,14 +110,15 @@ function Signup(props) {
                                         <input type="file" />
                                     </td>
                                 </tr>
+                                <tr>                                    
+                                </tr>
+                            </tbody>
+                            <tfoot>
                                 <tr>
                                     <td>
                                         <button type="button" onClick={onSignUpSumbit}>Sign Up</button>
                                     </td>
                                 </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr></tr>
                             </tfoot>
                         </table>                    
                     </form>
