@@ -59,8 +59,41 @@ function Signup(props) {
         <section className="app main-container">            
             <article className="signup-article">
                 <div className="signup-article-left">
-                    <img src={require('../Signup/signup_01.jpg')} />
+                    {/* <img src={require('../Signup/signup_01.jpg')} /> */}
+                    <form className="signup-login-form">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>타이틀</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>이메일주소</td>
+                                    <td>인풋</td>
+                                </tr>
+                                <tr>
+                                    <td>비밀번호</td>
+                                    <td>인풋</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>
+                                        <input type="button" name="" value="로그인" />
+                                    </td>
+                                    <td>
+                                        아이디 찾기
+                                    </td>
+                                    <td>
+                                        비밀번호 찾기
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </form>
                 </div>
+
                 <div className="signup-article-right">
                     <form className="signup-form">
                         <table className="signup-form-table">
