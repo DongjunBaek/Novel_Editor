@@ -64,29 +64,35 @@ function Signup(props) {
                         <table>
                             <thead>
                                 <tr>
-                                    <th>타이틀</th>
+                                    <th>Story Planet</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>이메일주소</td>
-                                    <td>인풋</td>
+                                    <td>Email</td>
+                                    <td>
+                                        <input type="email" name="" id="" value=""/>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>비밀번호</td>
-                                    <td>인풋</td>
+                                    <td>Password</td>
+                                    <td>
+                                        <input type="password" name="" id="" value=""/>
+                                    </td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <td>
-                                        <input type="button" name="" value="로그인" />
+                                        <input type="button" name="" value="Login" />
                                     </td>
+                                </tr>
+                                <tr>
                                     <td>
-                                        아이디 찾기
+                                        <button type="button">Forgot Email</button>
                                     </td>
-                                    <td>
-                                        비밀번호 찾기
+                                    <td>                                        
+                                        <button type="button">Forgot Password</button>
                                     </td>
                                 </tr>
                             </tfoot>
