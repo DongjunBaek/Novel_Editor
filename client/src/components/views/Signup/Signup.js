@@ -57,11 +57,12 @@ function Signup(props) {
 
     return (
         <section className="app main-container">            
+        {/* left */}
             <article className="signup-article">
                 <div className="signup-article-left">
                     {/* <img src={require('../Signup/signup_01.jpg')} /> */}
                     <form className="signup-login-form">
-                        <table>
+                        <table id="login-form">
                             <thead>
                                 <tr>
                                     <th>Story Planet</th>
@@ -71,20 +72,20 @@ function Signup(props) {
                                 <tr>
                                     <td>Email</td>
                                     <td>
-                                        <input type="email" name="" id="" value=""/>
+                                        {/* <input type="email" name="" id="" value=""/> */}
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Password</td>
                                     <td>
-                                        <input type="password" name="" id="" value=""/>
+                                        {/* <input type="password" name="" id="" value=""/> */}
                                     </td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <td>
-                                        <input type="button" name="" value="Login" />
+                                        {/* <input type="button" name="" value="Login" /> */}
                                     </td>
                                 </tr>
                                 <tr>
@@ -99,7 +100,7 @@ function Signup(props) {
                         </table>
                     </form>
                 </div>
-
+{/* right */}
                 <div className="signup-article-right">
                     <form className="signup-form">
                         <table className="signup-form-table">
