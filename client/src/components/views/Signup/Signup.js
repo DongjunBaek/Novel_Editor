@@ -65,27 +65,27 @@ function Signup(props) {
                         <table id="login-form">
                             <thead>
                                 <tr>
-                                    <th>Story Planet</th>
+                                    <th className="">Story Planet</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Email</td>
                                     <td>
-                                        {/* <input type="email" name="" id="" value=""/> */}
+                                        <input type="email" />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Password</td>
                                     <td>
-                                        {/* <input type="password" name="" id="" value=""/> */}
+                                        <input type="password" name="" id="" />
                                     </td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <td>
-                                        {/* <input type="button" name="" value="Login" /> */}
+                                        <button type="button" name="" >Login</button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -147,7 +147,9 @@ function Signup(props) {
                                         Profile Image Upload -->
                                     </td>
                                     <td>
-                                        <input type="file" />
+                                        <label> 업로드 버튼
+                                            <input type="file" id="profile-img-upload" style={{display:'none'}}/>
+                                        </label>
                                     </td>
                                 </tr>
                                 <tr>                                    
