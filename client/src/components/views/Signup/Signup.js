@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 function Signup(props) {
 
+    // Signup 
     const [Email, setEmail] = useState('');
     
     const [Name, setName] = useState('');
@@ -31,6 +32,21 @@ function Signup(props) {
         console.log(PasswordChk)
     };
     
+
+    // Login 
+
+    const [LoginEmail, setLoginEmail] = useState('');
+
+    const [LoginPassword, setLoginPassword] = useState('');
+
+    const onLoginEmailHandler = (e) => {
+        setLoginEmail(e.target.value);        
+    }
+
+    const onLoginPasswordHandler = (e) => {
+        setLoginPassword(e.target.value);        
+    }
+
     const dispatch = useDispatch();
 
     const onSignUpSumbit = () => {
@@ -72,13 +88,13 @@ function Signup(props) {
                                 <tr>
                                     <td>Email</td>
                                     <td>
-                                        <input type="email" />
+                                        <input type="email" onChange={onLoginEmailHandler} />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Password</td>
                                     <td>
-                                        <input type="password" name="" id="" />
+                                        <input type="password" onChange={onLoginPasswordHandler} />
                                     </td>
                                 </tr>
                             </tbody>
