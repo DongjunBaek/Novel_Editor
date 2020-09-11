@@ -1,3 +1,13 @@
+/* common */
+.btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: none;
+}
+input {
+    outline: none;
+}
 .signup-section{
     position: relative;
     top: 80px;
@@ -88,6 +98,11 @@
     flex-direction: column;
 }
 
+.signup-form-table tr{
+    flex-direction: column;
+    justify-content: center;    
+}
+
 .signup-form-table tbody tr {
     margin-top: 5%;
 }
@@ -99,9 +114,22 @@
 .signup-form-table tbody tr td:first-child{
     color: #ebebeb;
     font-weight: bold;
+    justify-content: center;
+}
+.signup-form-table tbody tr td:last-child{
+    color: #ebebeb;
+    font-weight: bold;
     padding-left: 5px;
+    justify-content: center;
 }
 
+.signup-form-table tbody tr td:last-child input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:2px solid  #441144; 
+    background-color: #111;
+}
 .signup-form-table tfoot{
     position: relative;
     width: 100%;
@@ -160,6 +188,7 @@
     position: relative;
     display: flex;
     margin-bottom: 5%;
+    flex-direction: column;
 }
 #login-form tbody tr td{
     position: relative;
@@ -172,10 +201,39 @@
     position: relative;
     display: flex;
     width: 80%;
+    background-color: #ebebeb;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:2px solid  #441144; 
+    
 }
 #login-form tfoot{
     position: relative;
     display: flex;
     flex-direction: column;
     height: 25%;
+}
+#login-form tfoot tr{
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+#login-form tfoot td{
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: center;    
+    color: #6b6b6b;
+}
+
+#login-form tfoot td .btn{
+    font-size: 2em;
+    background: #000;
+    color: #ebebeb;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin: 2%;
+    cursor: pointer;
 }

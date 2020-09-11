@@ -87,13 +87,13 @@ function Signup(props) {
                             <tbody>
                                 <tr>
                                     <td>Email</td>
-                                    <td>
+                                    <td className="bot-border">
                                         <input type="email" onChange={onLoginEmailHandler} />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Password</td>
-                                    <td>
+                                    <td className="bot-border">
                                         <input type="password" onChange={onLoginPasswordHandler} />
                                     </td>
                                 </tr>
@@ -101,15 +101,17 @@ function Signup(props) {
                             <tfoot>
                                 <tr>
                                     <td>
-                                        <button type="button" name="" >Login</button>
+                                        <button type="button" name="" className="btn" >Login</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <button type="button">Forgot Email</button>
+                                        <button type="button" className="btn">Forgot Email</button>
                                     </td>
+                                </tr>
+                                <tr>
                                     <td>                                        
-                                        <button type="button">Forgot Password</button>
+                                        <button type="button" className="btn">Forgot Password</button>
                                     </td>
                                 </tr>
                             </tfoot>
@@ -174,7 +176,7 @@ function Signup(props) {
                             <tfoot>
                                 <tr>
                                     <td>
-                                        <button type="button" onClick={onSignUpSumbit}>Sign Up</button>
+                                        <button type="button" className="btn" onClick={onSignUpSumbit}>Sign Up</button>
                                     </td>
                                 </tr>
                             </tfoot>
