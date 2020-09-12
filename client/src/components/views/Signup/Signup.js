@@ -101,19 +101,18 @@ function Signup(props) {
                             <tfoot>
                                 <tr>
                                     <td>
-                                        <button type="button" name="" className="btn" >Login</button>
+                                        <button type="button" id="login-btn" name="" className="btn" >Login</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <button type="button" className="btn">Forgot Email</button>
+                                        <button type="button" id="forgot-email" className="btn" >Forgot Email</button>
                                     </td>
-                                </tr>
-                                <tr>
                                     <td>                                        
-                                        <button type="button" className="btn">Forgot Password</button>
+                                        <button type="button" id="forgot-password" className="btn">Forgot Password</button>
                                     </td>
                                 </tr>
+                            
                             </tfoot>
                         </table>
                     </form>
@@ -133,7 +132,7 @@ function Signup(props) {
                                         Email
                                     </td>
                                     <td>
-                                        <input type="text" onChange={onEmailHandler} />
+                                        <input type="text" onChange={onEmailHandler} placeholder="" />
                                     </td>
                                 </tr>
                                 <tr>

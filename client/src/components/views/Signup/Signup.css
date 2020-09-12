@@ -1,4 +1,5 @@
 /* common */
+/* https://colorhunt.co/palette/207335 color palette */
 .btn{
     display: flex;
     justify-content: center;
@@ -71,13 +72,14 @@ input {
     position: relative;
     display: flex;
     width: 80%;
+    color: #ebebeb
 }
 .signup-form-table thead{
     position: relative;
     width: 100%;
     height: 20%;
     display: flex;
-    border: 1p solid violet;
+    border: 1p solid #065c6f;
     flex-direction: column;
     justify-content: center;
 }
@@ -89,6 +91,7 @@ input {
 }
 .signup-form-table thead tr td{
     color: #ebebeb;
+    justify-content: center;
 }
 
 .signup-form-table tbody{
@@ -127,7 +130,7 @@ input {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom:2px solid  #441144; 
+    border-bottom:2px solid  #065c6f; 
     background-color: #111;
 }
 .signup-form-table tfoot{
@@ -144,6 +147,7 @@ input {
     display: flex;
     flex-direction: column;    
     width: 100%;
+    background-color: #f4f4f4;
 }
 #login-form {
     position: relative;
@@ -166,6 +170,7 @@ input {
     position: relative;
     display: flex;
     justify-content: center;
+    
 }
 
 #login-form thead tr th {
@@ -181,7 +186,9 @@ input {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 45%;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
 }
 
 #login-form tbody tr{
@@ -189,6 +196,8 @@ input {
     display: flex;
     margin-bottom: 5%;
     flex-direction: column;
+    width: 80%;
+    
 }
 #login-form tbody tr td{
     position: relative;
@@ -200,24 +209,28 @@ input {
 #login-form tbody tr td input{
     position: relative;
     display: flex;
-    width: 80%;
-    background-color: #ebebeb;
+    /* width: 80%; */
+    width: 100%;
+    background-color: #f4f4f4;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom:2px solid  #441144; 
+    border-bottom:2px solid  #065c6f; 
     
 }
 #login-form tfoot{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 25%;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
 }
 #login-form tfoot tr{
     position: relative;
     display: flex;
     flex: 1;
+    width: 80%;
 }
 #login-form tfoot td{
     position: relative;
@@ -228,12 +241,36 @@ input {
 }
 
 #login-form tfoot td .btn{
-    font-size: 2em;
-    background: #000;
-    color: #ebebeb;
+    /* font-size: 1.5em; */
+    /* background: #000; */
+    /* color: #ebebeb; */
     display: flex;
     flex: 1;
     align-items: center;
     margin: 2%;
     cursor: pointer;
+    border-radius: 25px;    
+}
+#login-btn{
+    border: 1.5px solid #64958f;
+}
+#login-btn:hover {
+    background-color: #065c6f;
+    color: #f4f4f4;
+}
+
+#forgot-email{
+    border: 1.5px solid #64958f;
+}
+#forgot-email:hover {
+    background-color: #065c6f;
+    color: #f4f4f4;
+}
+
+#forgot-password{
+    border: 1.5px solid #64958f;
+}
+#forgot-password:hover {
+    background-color: #065c6f;
+    color: #f4f4f4;
 }
