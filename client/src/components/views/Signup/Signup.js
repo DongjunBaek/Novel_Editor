@@ -86,6 +86,11 @@ function Signup(props) {
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td>Email</td>
                                     <td className="bot-border">
                                         <input type="email" onChange={onLoginEmailHandler} />
@@ -123,7 +128,8 @@ function Signup(props) {
                         <table className="signup-form-table">
                             <thead>
                                 <tr>
-                                    <td>Welcome To Story Planet</td>
+                                    <td>Welcome To </td>
+                                    <td>Story Planet</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -161,10 +167,10 @@ function Signup(props) {
                                 </tr>
                                 <tr>
                                     <td>
-                                        Profile Image Upload -->
+                                        Profile Image Upload
                                     </td>
                                     <td>
-                                        <label> 업로드 버튼
+                                        <label htmlFor="profile-img-upload"> Click!!
                                             <input type="file" id="profile-img-upload" style={{display:'none'}}/>
                                         </label>
                                     </td>
@@ -175,7 +181,7 @@ function Signup(props) {
                             <tfoot>
                                 <tr>
                                     <td>
-                                        <button type="button" className="btn" onClick={onSignUpSumbit}>Sign Up</button>
+                                        <button type="button" className="btn" id="btn-signup" onClick={onSignUpSumbit}>Sign Up</button>
                                     </td>
                                 </tr>
                             </tfoot>

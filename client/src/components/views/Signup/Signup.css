@@ -23,9 +23,12 @@ input {
     width: 80%;
     height: 720px;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     flex-direction: row;
     /* margin-top: 10%; */
+    border: 3px solid #64958f;
+    border-radius: 50px;
+    overflow: hidden;
 }
 .signup-article-left{
     display: flex;
@@ -99,6 +102,9 @@ input {
     width: 100%;
     height: 60%;
     flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .signup-form-table tr{
@@ -108,6 +114,14 @@ input {
 
 .signup-form-table tbody tr {
     margin-top: 5%;
+    width: 80%;
+    /* justify-content: center; */
+}
+
+.signup-form-table tr:first-child{
+    width: 80%;
+    /* height: 100%; */
+    
 }
 
 .signup-form-table tbody tr td{
@@ -117,13 +131,16 @@ input {
 .signup-form-table tbody tr td:first-child{
     color: #ebebeb;
     font-weight: bold;
-    justify-content: center;
+    /* justify-content: center; */
+    display: flex;
+
 }
 .signup-form-table tbody tr td:last-child{
     color: #ebebeb;
     font-weight: bold;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     justify-content: center;
+    display: flex;
 }
 
 .signup-form-table tbody tr td:last-child input{
@@ -132,14 +149,42 @@ input {
     border-right: none;
     border-bottom:2px solid  #065c6f; 
     background-color: #111;
+    display: flex;
+    flex: 1;
 }
+
 .signup-form-table tfoot{
     position: relative;
     width: 100%;
     height: 20%;
     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+label[for="profile-img-upload"]{
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    border: 2px solid #065c6f;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-signup{
+    border: 3px solid #065c6f;
+    width: 90%;
+    min-width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #f4f4f4;
+}
 
 /* left login-form */
 .signup-login-form {
@@ -186,7 +231,7 @@ input {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 25%;
+    height: 45%;
     justify-content: center;
     align-items: center;
 }
@@ -205,6 +250,8 @@ input {
     flex: 1;
     font-weight: bold;
     padding-left: 5px;
+    width: 100%;
+    height: 100%;
 }
 #login-form tbody tr td input{
     position: relative;
@@ -218,6 +265,7 @@ input {
     border-bottom:2px solid  #065c6f; 
     
 }
+
 #login-form tfoot{
     position: relative;
     display: flex;
