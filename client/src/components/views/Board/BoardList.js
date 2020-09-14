@@ -6,15 +6,13 @@ function BoardList(props) {
 
     const boardNo = 1;
 
-
-
     return (
-        <section className="boardList-section border">
+        <section className="app main-container border">
             <article>
                 <div className="boardList-container">
                     <table className="BoardTable">
-                        <thead className="">                            
-                            <tr className="" >
+                        <thead >                            
+                            <tr  >
                                 <th>번호</th>
                                 <th>제목</th>
                                 <th>작성자</th>
@@ -24,16 +22,16 @@ function BoardList(props) {
                             </tr>
                         </thead>
                         <tbody>
-                            <Link to="/boardDetail">
+                            
                                 <tr >
                                     <td>1</td>
-                                    <td>Title</td>
+                                    <td><Link to="/boardDetail">Title</Link></td>
                                     <td>writer</td>
                                     <td>20-07-31</td>
                                     <td>0</td>
                                     <td>0</td>
                                 </tr>
-                            </Link>
+                            
                             <tr>
                                 <td>1</td>
                                 <td>Title</td>
