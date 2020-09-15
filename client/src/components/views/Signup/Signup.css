@@ -20,7 +20,7 @@ input {
 }
 .signup-article {
     display: flex;
-    width: 80%;
+    width: 960px;
     height: 720px;
     justify-content: center;
     /* border: 1px solid red; */

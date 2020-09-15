@@ -24,7 +24,7 @@
 .landing-cotainer{
     position: relative;
     display: flex;
-    width: 1280px;
+    width: 960px;
     height: 720px;
     /* background-color: #fcdcc7; */
 }
