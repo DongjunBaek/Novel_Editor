@@ -15,14 +15,16 @@ function BoardList(props) {
         <section className="app main-container border">
             <article className="boardList-article-container">
                 <div className="boardList-top">
-                    slideShow
+                    <div id="board-list-title">
+                        <h1>BoardList</h1>
+                    </div>
                 </div>
                 <div className="boardList-container">
                     <table className="BoardTable">
                         <thead>
                             <tr>
                                 <td>
-                                    <label htmlFor="search">Category</label>
+                                    <label htmlFor="search"></label>
                                     <select name="search" id="search">
                                         <option>제목</option>
                                         <option>작성자</option>
@@ -35,11 +37,14 @@ function BoardList(props) {
                                     <button onClick={searchBoard}>Search</button>
                                 </td>
                             </tr>
-                            <tr>
+                            {/* <tr>
                                 <td></td>
-                            </tr>
+                            </tr> */}
                         </thead>
                         <tbody>
+                            {/* 
+                                1 5 1 1 1 1
+                            */}
                             <tr>
                                 <th>번호</th>
                                 <th>제목</th>

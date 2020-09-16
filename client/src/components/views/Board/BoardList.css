@@ -47,29 +47,78 @@
     flex: 1;
     flex-direction: column;
     height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .BoardTable thead{    
     display: flex;    
     height: 36px;
+    flex: 1;
+    flex-direction: column;
 }
+.BoardTable thead{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .BoardTable tbody{    
     display: flex;
     flex-direction: column;
+    flex: 4;
+    width: 80%;
+    height: 100%;
 }
+.BoardTable tbody tr:first-child{
+    display: flex;
+    flex: 1;
+}
+.BoardTable tbody tr:not(:first-child){
+    display: flex;
+    flex: 2;
+}   
+
 .BoardTable tr {
     display: flex;
     flex: 1;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
     /* border: 1px solid orangered;     */
 }
 
-.BoardTable th, .BoardTable td {
+.BoardTable tr td{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.BoardTable tbody th, .BoardTable tbody td {
     display: flex;
     flex: 1;
     /* border: orangered 1px solid; */
     height: 36px;
+    justify-content: center;
+    align-items: center;
+}
+.BoardTable tbody th:not(:nth-child(2)){
+    flex: 1;
+}
+.BoardTable tbody th:nth-child(2){
+    flex: 5;
+}
+.BoardTable tbody tr td:not(:nth-child(2)){
+    flex: 1;
+}
+.BoardTable tbody tr td:nth-child(2){
+    flex: 5;
 }
 
 
@@ -77,7 +126,7 @@
 .boardList-container{
     display: flex;
     border: 1px solid red;
-    flex: 4;
+    flex: 8;
 }
 .boardList-bot{
     position: relative;
