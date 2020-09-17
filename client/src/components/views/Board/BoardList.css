@@ -28,9 +28,22 @@
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
+    /* background-color: red; */
     flex: 2;
+    align-items: center;
 }
+#board-list-title{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    /* background: yellow; */
+    width: 80%;
+    height: 90%;
+    align-items: center;
+    font-size: 4em;
+}
+
 .boardList-section article{
     position: relative;
     display: flex;
@@ -112,13 +125,14 @@
     flex: 1;
 }
 .BoardTable tbody th:nth-child(2){
-    flex: 5;
+    flex: 5;    
 }
 .BoardTable tbody tr td:not(:nth-child(2)){
     flex: 1;
 }
 .BoardTable tbody tr td:nth-child(2){
     flex: 5;
+    justify-content: left;
 }
 
 

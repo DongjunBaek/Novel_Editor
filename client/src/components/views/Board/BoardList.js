@@ -86,6 +86,54 @@ function BoardList(props) {
                                 <td>0</td>
                                 <td>0</td>
                             </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Title</td>
+                                <td>writer</td>
+                                <td>20-07-31</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Title</td>
+                                <td>writer</td>
+                                <td>20-07-31</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Title</td>
+                                <td>writer</td>
+                                <td>20-07-31</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Title</td>
+                                <td>writer</td>
+                                <td>20-07-31</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Title</td>
+                                <td>writer</td>
+                                <td>20-07-31</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Title</td>
+                                <td>writer</td>
+                                <td>20-07-31</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
                         </tbody>
                         <tfoot>
 
@@ -93,7 +141,19 @@ function BoardList(props) {
                     </table>
                 </div>
                 <div className="boardList-bot">
-
+                    <div>
+                        <button>이전</button>
+                    </div>
+                    <div>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <button>5</button>
+                    </div>
+                    <div>
+                        <button>다음</button>
+                    </div>
                 </div>
             </article>
         </section>
