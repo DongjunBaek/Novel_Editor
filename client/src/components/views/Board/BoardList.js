@@ -141,18 +141,14 @@ function BoardList(props) {
                     </table>
                 </div>
                 <div className="boardList-bot">
-                    <div>
-                        <button>이전</button>
-                    </div>
-                    <div>
+                    <div className="boardList-bot-container">
+                        <button id="pre">이전</button>
                         <button>1</button>
                         <button>2</button>
                         <button>3</button>
                         <button>4</button>
                         <button>5</button>
-                    </div>
-                    <div>
-                        <button>다음</button>
+                        <button id="next">다음</button>
                     </div>
                 </div>
             </article>
