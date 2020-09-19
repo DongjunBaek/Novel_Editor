@@ -3,7 +3,7 @@ import '../BoardDetail/BoardDetail.css';
 // BOARD_DETAILPAGE
 function BoardDetail() {
     return (
-        <section className="BoardDetail-section">
+        <section className="app main-container border">
             
             <article className="BoardDetail-artcle test">
                 {/* 번호, 제목, 작성자, 작성날짜, 조회 수, 추천 수  */}
@@ -18,9 +18,9 @@ function BoardDetail() {
                         </ul>
                     </div>
 
-                    <div className="board-content test">
-                        <div className="board-info test">
-                            <ul class="board-info-ul test">
+                    <div className="board-content ">
+                        <div className="board-info ">
+                            <ul class="board-info-ul ">
                                 <li>글 번호</li>
                                 <li></li>                                
                                 <li>작성자</li>
@@ -33,10 +33,10 @@ function BoardDetail() {
                                 <li></li>                                
                             </ul>
                         </div>
-                        <div className="board-title test">
+                        <div className="board-title ">
                             <p>글 제목</p>
                         </div>
-                        <div className="board-text test">
+                        <div className="board-text ">
                             <p>글 내용</p>
                         </div>
 
