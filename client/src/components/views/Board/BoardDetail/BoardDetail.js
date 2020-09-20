@@ -1,7 +1,17 @@
-import React from 'react'
+import React, {useState}  from 'react'
 import '../BoardDetail/BoardDetail.css';
+
+// 리액트 퀼
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
+
+
 // BOARD_DETAILPAGE
 function BoardDetail() {
+
+    const [ contentVal , setContentVal ] =  useState ( ' ' );
+
+
     return (
         <section className="app main-container border">
             
@@ -37,7 +47,7 @@ function BoardDetail() {
                             <p>글 제목</p>
                         </div>
                         <div className="board-text ">
-                            <p>글 내용</p>
+                            <ReactQuill/>
                         </div>
 
                     </div>
