@@ -30,7 +30,7 @@ function BoardDetail() {
 
                     <div className="board-content ">
                         <div className="board-info ">
-                            <ul class="board-info-ul ">
+                            <ul className="board-info-ul ">
                                 <li>글 번호</li>
                                 <li></li>                                
                                 <li>작성자</li>
@@ -46,8 +46,11 @@ function BoardDetail() {
                         <div className="board-title ">
                             <p>글 제목</p>
                         </div>
-                        <div className="board-text ">
-                            <ReactQuill/>
+                        <div className="board-text">
+                            <ReactQuill className="react-quill" 
+                            // readOnly
+                            value="테스트"
+                            />
                         </div>
 
                     </div>

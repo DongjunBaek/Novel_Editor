@@ -78,12 +78,23 @@
 }
 
 .board-text{
+    position: relative;
     display: flex;
-    height: 85%;
+    width: 80%;
+    height: 70%;
+    align-self: center;
 }
 
 
 /* test border */
 .test {
     border: 1px solid orange;
+}
+
+/* react-quill */
+.quill {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
 }
