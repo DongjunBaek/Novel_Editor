@@ -1,4 +1,4 @@
-import React, {useState}  from 'react'
+import React, {useState, useEffect}  from 'react'
 import '../BoardDetail/BoardDetail.css';
 
 // 리액트 퀼
@@ -11,6 +11,29 @@ function BoardDetail() {
 
     const [ contentVal , setContentVal ] =  useState ( ' ' );
 
+    const [ writeYN , setWriteYN] = useState('N');
+
+
+    function quillDiv(writeYN){
+        if (writeYN == 'N') {
+            return <div>
+            <ReactQuill
+                className="react-quill"
+                readOnly
+                value="테스트"
+            />
+            </div>
+        } else {
+            return <div>
+            <ReactQuill
+                className="react-quill"
+                value="에디터모드"
+            />
+            </div>
+        }
+    }
+
+    
 
     return (
         <section className="app main-container border">
@@ -47,10 +70,7 @@ function BoardDetail() {
                             <p>글 제목</p>
                         </div>
                         <div className="board-text">
-                            <ReactQuill className="react-quill" 
-                            // readOnly
-                            value="테스트"
-                            />
+                            {quillDiv(writeYN)}
                         </div>
 
                     </div>
