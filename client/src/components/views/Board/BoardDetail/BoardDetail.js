@@ -7,12 +7,15 @@ import "react-quill/dist/quill.snow.css";
 
 
 // BOARD_DETAILPAGE
-function BoardDetail() {
+function BoardDetail(props) {
 
     const [ contentVal , setContentVal ] =  useState ( ' ' );
 
     const [ writeYN , setWriteYN] = useState('N');
 
+    useEffect(() => {
+        
+    })
 
     function quillDiv(writeYN){
         if (writeYN == 'N') {

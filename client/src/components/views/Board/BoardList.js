@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../Board/BoardList.css'
 import { Link } from "react-router-dom";
 
@@ -7,9 +7,20 @@ function BoardList(props) {
     const boardNo = 1;
 
     const searchBoard = () =>{
-        console.log('Search Board');
 
     };
+    const [writeYN, setWriteYN] = useState('N');
+    
+    const onWriteYNHandler = () => {
+        setWriteYN('Y');
+        var writeYN = writeYN;
+        props.history.push('/boardDetail',{ writeYN: writeYN});
+    }
+    const onWriteYNHandlerDetail = () => {
+        setWriteYN('N');
+        var writeYN = writeYN;
+        props.history.push('/boardDetail',{ writeYN: writeYN});
+    }
 
     return (
         <section className="app main-container border">
@@ -36,6 +47,9 @@ function BoardList(props) {
                                 <td>
                                     <button onClick={searchBoard}>Search</button>
                                 </td>
+                                <td>
+                                    <button onClick = {onWriteYNHandler}>글쓰기</button>
+                                </td>
                             </tr>
                             {/* <tr>
                                 <td></td>
@@ -55,7 +69,7 @@ function BoardList(props) {
                             </tr>
                             <tr >
                                 <td>1</td>
-                                <td><Link to="/boardDetail">Title</Link></td>
+                                <td><button onClick = {onWriteYNHandlerDetail}>제목</button></td>
                                 <td>writer</td>
                                 <td>20-07-31</td>
                                 <td>0</td>

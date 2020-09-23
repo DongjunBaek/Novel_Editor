@@ -88,7 +88,7 @@
 
 /* test border */
 .test {
-    border: 1px solid orange;
+    border: 1px solid rgba(0, 0, 255, 0.356)
 }
 
 /* react-quill */
