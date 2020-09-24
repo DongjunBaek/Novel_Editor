@@ -11,10 +11,8 @@ function BoardDetail(props) {
 
     const [ contentVal , setContentVal ] =  useState ( ' ' );
 
-    const [ writeYN , setWriteYN] = useState('N');
-
     useEffect(() => {
-        
+        // console.log(props.location.state.writeYN);
     })
 
     function quillDiv(writeYN){
@@ -73,7 +71,7 @@ function BoardDetail(props) {
                             <p>글 제목</p>
                         </div>
                         <div className="board-text">
-                            {quillDiv(writeYN)}
+                            {quillDiv(props.location.state.writeYN)}
                         </div>
 
                     </div>

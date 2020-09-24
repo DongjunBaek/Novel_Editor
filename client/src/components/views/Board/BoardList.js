@@ -2,25 +2,20 @@ import React, {useState} from 'react'
 import '../Board/BoardList.css'
 import { Link } from "react-router-dom";
 
+
+const searchBoard = () =>{
+
+};
+
 function BoardList(props) {
-
-    const boardNo = 1;
-
-    const searchBoard = () =>{
-
-    };
+    
     const [writeYN, setWriteYN] = useState('N');
     
-    const onWriteYNHandler = () => {
-        setWriteYN('Y');
-        var writeYN = writeYN;
+    const onWriteYNHandler = () => {        
+        alert(writeYN);
         props.history.push('/boardDetail',{ writeYN: writeYN});
     }
-    const onWriteYNHandlerDetail = () => {
-        setWriteYN('N');
-        var writeYN = writeYN;
-        props.history.push('/boardDetail',{ writeYN: writeYN});
-    }
+
 
     return (
         <section className="app main-container border">
@@ -48,7 +43,10 @@ function BoardList(props) {
                                     <button onClick={searchBoard}>Search</button>
                                 </td>
                                 <td>
-                                    <button onClick = {onWriteYNHandler}>글쓰기</button>
+                                    <button onClick = {() => { setWriteYN('Y')} }>글쓰기</button>
+                                </td>
+                                <td>
+                                    <button onClick={onWriteYNHandler}>  확인 </button>
                                 </td>
                             </tr>
                             {/* <tr>
@@ -69,7 +67,7 @@ function BoardList(props) {
                             </tr>
                             <tr >
                                 <td>1</td>
-                                <td><button onClick = {onWriteYNHandlerDetail}>제목</button></td>
+                                <td><button onClick = {() => { setWriteYN('N')} }>제목</button></td>
                                 <td>writer</td>
                                 <td>20-07-31</td>
                                 <td>0</td>
