@@ -24,13 +24,15 @@ function BoardDetail(props) {
                 value="테스트"
             />
             </div>
-        } else {
+        } else if((writeYN == 'Y')){
             return <div>
             <ReactQuill
                 className="react-quill"
                 value="에디터모드"
             />
             </div>
+        } else {
+            alert('오류얌');
         }
     }
 

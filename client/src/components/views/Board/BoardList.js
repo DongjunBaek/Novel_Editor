@@ -1,21 +1,26 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import '../Board/BoardList.css'
 import { Link } from "react-router-dom";
 
 
-const searchBoard = () =>{
 
-};
 
 function BoardList(props) {
     
-    const [writeYN, setWriteYN] = useState('N');
-    
-    const onWriteYNHandler = () => {        
-        alert(writeYN);
-        props.history.push('/boardDetail',{ writeYN: writeYN});
+    const onEditorMode = () => {
+        props.history.push('/boardDetail',{ writeYN: 'Y'});
     }
-
+    
+    const onReaderMode = () => {
+        props.history.push('/boardDetail',{ writeYN: 'N'});
+    }
+    
+    // useEffect(() => {
+    //     // console.log('컴포넌트가 화면에 나타남');
+    //     return () => {
+    //         // console.log('컴포넌트가 화면에서 사라짐');
+    //     };
+    // }, []);
 
     return (
         <section className="app main-container border">
@@ -40,13 +45,10 @@ function BoardList(props) {
                                     <input type="text" id="searchBox" placeholder="검색어를 입력해 주세요." />
                                 </td>
                                 <td>
-                                    <button onClick={searchBoard}>Search</button>
+                                    <button>Search</button>
                                 </td>
                                 <td>
-                                    <button onClick = {() => { setWriteYN('Y')} }>글쓰기</button>
-                                </td>
-                                <td>
-                                    <button onClick={onWriteYNHandler}>  확인 </button>
+                                    <button onClick = { onEditorMode }>글쓰기</button>
                                 </td>
                             </tr>
                             {/* <tr>
@@ -65,9 +67,9 @@ function BoardList(props) {
                                 <th>조회 수</th>
                                 <th>추천 수</th>
                             </tr>
-                            <tr >
+                            <tr onClick = { onReaderMode }>
                                 <td>1</td>
-                                <td><button onClick = {() => { setWriteYN('N')} }>제목</button></td>
+                                <td>제목</td>
                                 <td>writer</td>
                                 <td>20-07-31</td>
                                 <td>0</td>
