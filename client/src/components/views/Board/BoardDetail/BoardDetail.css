@@ -84,7 +84,11 @@
     height: 70%;
     align-self: center;
 }
-
+.board-text div{
+    position: relative;
+    display: flex;
+    flex: 1;
+}
 
 /* test border */
 .test {
@@ -97,4 +101,15 @@
     position: relative;
     flex: 1;
     flex-direction: column;
+}
+.quill .ql-toolbar{
+    display: flex;
+    flex: 2;
+}
+.quill .ql-container{
+    display: flex;
+    flex: 8;
+}
+.quill_readOnly .ql-toolbar{
+    display: none;
 }

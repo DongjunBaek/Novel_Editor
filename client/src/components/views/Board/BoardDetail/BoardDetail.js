@@ -19,7 +19,7 @@ function BoardDetail(props) {
         if (writeYN == 'N') {
             return <div>
             <ReactQuill
-                className="react-quill"
+                className="react-quill quill_readOnly"
                 readOnly
                 value="테스트"
             />
@@ -56,10 +56,8 @@ function BoardDetail(props) {
 
                     <div className="board-content ">
                         <div className="board-info ">
-                            <ul className="board-info-ul ">
+                            <ul className="board-info-ul">
                                 <li>글 번호</li>
-                                <li></li>                                
-                                <li>작성자</li>
                                 <li></li>                                
                                 <li>작성 날짜</li>
                                 <li></li>                                
@@ -70,7 +68,12 @@ function BoardDetail(props) {
                             </ul>
                         </div>
                         <div className="board-title ">
-                            <p>글 제목</p>
+                            <ul className="board-info-ul">
+                                <li>제목</li>
+                                <li></li>
+                                <li>작성자</li>
+                                <li></li>
+                            </ul>
                         </div>
                         <div className="board-text">
                             {quillDiv(props.location.state.writeYN)}
