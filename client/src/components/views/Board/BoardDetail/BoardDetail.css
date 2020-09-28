@@ -2,6 +2,37 @@
     padding: 0px;
     margin: 0px;
 }
+
+
+/* react-quill */
+.quill {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+}
+.quill .ql-toolbar{
+    display: flex;
+    flex: 2;
+}
+.quill div.ql-container{
+    display: flex;
+    flex: 8;
+}
+div.ql-container .ql-editor{
+    /* width: 100%; */
+    /* background-color: #000; */
+    flex-direction: column;
+    max-width: 540px;
+    font-family: 'BMJUA';
+}
+
+.quill_readOnly .ql-toolbar{
+    display: none;
+}
+
+/* board */
+
 .BoardDetail-section{
     display: flex;
     width: 100vw;
@@ -27,7 +58,7 @@
 
 .board-sideBar{
     display: flex;
-    width: 30%;
+    width: 15%;
     height: 100%;
 }
 
@@ -48,7 +79,7 @@
 .board-content{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 85%;
     height: 100%;
 }
 
@@ -69,8 +100,8 @@
     flex: 1;
     align-items: center;
     justify-content: center;
-    border-bottom: 4px solid #FFC7C7;    
-    margin-right: 2%;
+    border: 4px solid #FFC7C7;    
+    margin: 2%;
 }
 .board-title{
     display: flex;
@@ -85,31 +116,11 @@
     align-self: center;
 }
 .board-text div{
-    position: relative;
     display: flex;
     flex: 1;
 }
 
 /* test border */
 .test {
-    border: 1px solid rgba(0, 0, 255, 0.356)
-}
-
-/* react-quill */
-.quill {
-    display: flex;
-    position: relative;
-    flex: 1;
-    flex-direction: column;
-}
-.quill .ql-toolbar{
-    display: flex;
-    flex: 2;
-}
-.quill .ql-container{
-    display: flex;
-    flex: 8;
-}
-.quill_readOnly .ql-toolbar{
-    display: none;
+    /* border: 1px solid rgba(0, 0, 255, 0.356) */
 }

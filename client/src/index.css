@@ -37,3 +37,13 @@ input.error {
   height: 5px;
   margin-top: -12px;
 }
+
+
+/*
+  =============================== font-css ===============================
+*/
+@font-face {
+  font-family: "BMJUA";
+  font-weight: 300;
+  src: url("../src/fonts/BMJUA_ttf.ttf") format("truetype");
+}

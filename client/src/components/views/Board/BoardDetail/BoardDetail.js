@@ -41,11 +41,11 @@ function BoardDetail(props) {
     return (
         <section className="app main-container border">
             
-            <article className="BoardDetail-artcle test">
+            <article className="BoardDetail-artcle ">
                 {/* 번호, 제목, 작성자, 작성날짜, 조회 수, 추천 수  */}
-                <div className="board-container test">
-                    <div className="board-sideBar test">
-                        <ul className="board-sideBar-ul test">
+                <div className="board-container ">
+                    <div className="board-sideBar ">
+                        <ul className="board-sideBar-ul ">
                             <li>목록으로가기</li>
                             <li>즐겨찾기</li>
                             <li>맨위로</li>
