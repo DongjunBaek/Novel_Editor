@@ -13,18 +13,18 @@
 }
 .quill .ql-toolbar{
     display: flex;
-    flex: 2;
+    flex: 1;
 }
 .quill div.ql-container{
     display: flex;
-    flex: 8;
+    flex: 16;
 }
 div.ql-container .ql-editor{
     /* width: 100%; */
     /* background-color: #000; */
     flex-direction: column;
     max-width: 540px;
-    font-family: 'BMJUA';
+    /* font-family: 'BMJUA'; */
 }
 
 .quill_readOnly .ql-toolbar{

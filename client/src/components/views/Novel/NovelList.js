@@ -4,7 +4,7 @@ import '../Novel/NovelList.css';
 
 function NovelList() {
     return (
-        <section className="novelList-section border">
+        <section className="app main-container border">
             <article className="novelList-article">
                 <div className="novelList-container">
                     <table className="NovelTable">
