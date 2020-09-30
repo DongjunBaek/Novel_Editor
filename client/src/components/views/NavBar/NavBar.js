@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Sections/Navbar.css';
+import Btn from '../Common/btn';
 
 function NavBar() {
 
@@ -12,6 +13,7 @@ function NavBar() {
         <li><a href="/NovelList">NovelList</a></li>
         <li><a href="/signup">sign up</a></li>
       </ul>
+      <Btn />
     </div>
     // <nav className="menu" style={{ position: 'fixed', zIndex: 5, width: '100%' }}>
     //   <div className="menu__logo">
