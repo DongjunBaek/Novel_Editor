@@ -7,8 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100px;
-    background-color: #1f242d;
+    /* background-color: #1f242d; */
+    flex: 1;
 }
 a{
     position: relative;
@@ -20,6 +20,8 @@ a{
     letter-spacing: 2px;
     font-size: 16px;
     transition: 0.5s;
+    width: 100%;
+    /* height: 100%; */
 }
 a:hover{
     color: rgba(255, 255, 255, 1);

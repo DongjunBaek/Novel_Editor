@@ -4,18 +4,19 @@ import '../Common/btn.css';
 // import ProductInfo from './Sections/ProductInfo';
 // button 만들기
 
-function btn() {
+function btn(props) {
+
+    // console.log(props.href);
+    // console.log(props.btnNm);
     return (
-        <div>
-            <div className="btn-container">
-                <a href="#">
+        <div className="btn-container" >
+                <a href={props.href}>
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    button
+                    {props.btnNm}
                 </a>
-            </div>
         </div>
     )
 }

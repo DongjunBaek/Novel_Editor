@@ -4,17 +4,26 @@ import Btn from '../Common/btn';
 
 function NavBar() {
 
+  
 
   return (
+    // <div className="nav">
+    //   <ul className="nav-ul">
+    //     <li><a href="/">HOME</a></li>
+    //     <li><a href="/BoardList">BoardList</a></li>
+    //     <li><a href="/NovelList">NovelList</a></li>
+    //     <li><a href="/signup">sign up</a></li>
+    //   </ul>
+    // </div>
     <div className="nav">
       <ul className="nav-ul">
-        <li><a href="/">HOME</a></li>
-        <li><a href="/BoardList">BoardList</a></li>
-        <li><a href="/NovelList">NovelList</a></li>
-        <li><a href="/signup">sign up</a></li>
+        <li><Btn href="/" btnNm="HOME" /></li>
+        <li><Btn href="/BoardList" btnNm="BoardList" /></li>
+        <li><Btn href="/NovelList" btnNm="NovelList" /></li>
+        <li><Btn href="/signup" btnNm="sign up" /></li>
       </ul>
-      <Btn />
     </div>
+
     // <nav className="menu" style={{ position: 'fixed', zIndex: 5, width: '100%' }}>
     //   <div className="menu__logo">
     //     <a href="/" className="logo">GGwin</a>
