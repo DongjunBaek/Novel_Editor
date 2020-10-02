@@ -45,7 +45,7 @@ function BoardList(props) {
                                     <input type="text" id="searchBox" placeholder="검색어를 입력해 주세요." />
                                 </td>
                                 <td>
-                                    <button>Search</button>
+                                    <button id="searchBtn">Search</button>
                                 </td>
                                 <td>
                                     <button onClick = { onEditorMode }>글쓰기</button>

@@ -74,6 +74,35 @@
     justify-content: center;
 }
 
+.BoardTable thead{
+
+}
+
+#searchBox{
+    display: flex;
+    flex: 1;
+    border: 2px solid peachpuff;
+    height: 100%;
+    background-color: #f4f4f4;
+    border-bottom:1px solid  peachpuff;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+}
+#searchBtn{
+    border:1px solid peachpuff;
+    background-color: peachpuff;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .BoardTable tbody{    
     display: flex;
