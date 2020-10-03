@@ -16,7 +16,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #24292e;
-  background-color: #111;
+  background-color: rgb(205, 225, 242);
 }
 
 .app {
@@ -46,4 +46,14 @@ input.error {
   font-family: "BMJUA";
   font-weight: 300;
   src: url("../src/fonts/BMJUA_ttf.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SCD3";
+  /* font-weight: 300; */
+  src: url("../src/fonts/SCDream3.otf") format("opentype");
+}
+@font-face {
+  font-family: "SCD5";
+  /* font-weight: 300; */
+  src: url("../src/fonts/SCDream5.otf") format("opentype");
 }

@@ -20,7 +20,7 @@ function NavBar() {
         <li><Btn href="/" btnNm="HOME" /></li>
         <li><Btn href="/BoardList" btnNm="BoardList" /></li>
         <li><Btn href="/NovelList" btnNm="NovelList" /></li>
-        <li><Btn href="/signup" btnNm="sign up" /></li>
+        <li><Btn href="/signup" btnNm="Sign In" /></li>
       </ul>
     </div>
 

@@ -16,7 +16,7 @@ a{
     padding: 10px 30px;
     text-decoration: none;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, .4);
+    color: #2894ff;
     letter-spacing: 2px;
     font-size: 16px;
     transition: 0.5s;
@@ -24,7 +24,7 @@ a{
     /* height: 100%; */
 }
 a:hover{
-    color: rgba(255, 255, 255, 1);
+    color: #2894ff;
 }
 a span {
     display: block;

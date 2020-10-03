@@ -7,7 +7,7 @@
   height: 80px;
   position: absolute;
   z-index: 1;
-  background-color: #111;
+  /* background-color: #111; */
 }
 .nav-ul{
   display: flex;
@@ -17,12 +17,13 @@
   /* background-color: #ebebeb; */
   position: relative;
   justify-content: flex-end;
+  margin-right: 5%;
 }
 .nav-ul li {
   display: flex;
   width: 200px;
   height: 100%;
-  color: #ebebeb;
+  color: #2894ff;
   justify-content: center;
   align-self: center;
 }
@@ -33,10 +34,10 @@
   justify-content: center;
 }
 .nav-ul li a:active{
-  color: #ebebeb;
+  color: #2894ff;
 }
 .nav-ul li a:visited{
-  color: #ebebeb;
+  color: #2894ff;
 }
 
 /* @media (max-width: 767px) {
