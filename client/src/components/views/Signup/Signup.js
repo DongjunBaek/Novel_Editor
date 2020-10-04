@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 
 function Signup(props) {
 
+    // displayNoneEvent
+    const [disNone, setDisNone] = useState(true);
+
     // Signup 
     const [Email, setEmail] = useState('');
     
@@ -70,7 +73,6 @@ function Signup(props) {
         )
     }
 
-
     return (
         <section className="app main-container">            
         {/* left */}
@@ -123,13 +125,13 @@ function Signup(props) {
                     </form>
                 </div>
 {/* right */}
-                <div className="signup-article-right">
-                    <form className="signup-form">
+                <div className="signup-article-right ">
+                    <form className={'signup-form-table '+ (disNone ? 'disNone':'') }  >
                         <table className="signup-form-table">
                             <thead>
                                 <tr>
-                                    <td>Welcome To </td>
-                                    <td>Story Planet</td>
+                                    <td>Don't have an account?</td>
+                                    <td>Now Join Us</td>
                                 </tr>
                             </thead>
                             <tbody>
