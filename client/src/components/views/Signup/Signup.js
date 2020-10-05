@@ -126,6 +126,7 @@ function Signup(props) {
                 </div>
 {/* right */}
                 <div className="signup-article-right ">
+                    <button type="button" id="view-sing-up" onClick={() => setDisNone(false)} className={(disNone ? '':'disNone')}>Do you want join Us?</button>
                     <form className={'signup-form-table '+ (disNone ? 'disNone':'') }  >
                         <table className="signup-form-table">
                             <thead>
