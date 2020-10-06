@@ -127,7 +127,7 @@ function Signup(props) {
 {/* right */}
                 <div className="signup-article-right ">
                     <button type="button" id="view-sing-up" onClick={() => setDisNone(false)} className={(disNone ? '':'disNone')}>Do you want join Us?</button>
-                    <form className={'signup-form-table '+ (disNone ? 'disNone':'') }  >
+                    <form className={'signup-form-table '+ (disNone ? 'disNone':'flex') }  >
                         <table className="signup-form-table">
                             <thead>
                                 <tr>
@@ -173,20 +173,14 @@ function Signup(props) {
                                         Profile Image Upload
                                     </td>
                                     <td>
-                                        <label htmlFor="profile-img-upload"> Click!!
+                                        <label htmlFor="profile-img-upload"> UPLOAD YOUR IMAGE
                                             <input type="file" id="profile-img-upload" style={{display:'none'}}/>
                                         </label>
                                     </td>
                                 </tr>
-                                <tr>                                    
-                                </tr>
                             </tbody>
                             <tfoot>
-                                <tr>
-                                    <td>
-                                        <button type="button" className="btn" id="btn-signup" onClick={onSignUpSumbit}>Sign Up</button>
-                                    </td>
-                                </tr>
+                                <button type="button" className="btn" id="btn-signup" onClick={onSignUpSumbit}>Sign Up</button>
                             </tfoot>
                         </table>                    
                     </form>

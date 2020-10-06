@@ -44,7 +44,21 @@ input {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #FFD5CC;
+    /* background-color: #FFD5CC; */
+}
+
+#view-sing-up{
+    position: relative;
+    border: none;
+    background-color: rgba(104, 127, 231, 0.603);
+    font-size: 36px;
+    font-family: "SCD5";
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+    width: 100%;
+    height: 100%;
+    /* left: -100%; */
 }
 .signup-form{
     /* display: flex; */
@@ -95,6 +109,8 @@ input {
     
 }
 .signup-form-table thead tr td{
+    font-size: 30px;
+    font-family: "SCD3";
     color: #221f3b;
     justify-content: center;
 }
@@ -131,7 +147,7 @@ input {
     flex: 1;    
 }
 .signup-form-table tbody tr td:first-child{
-    color: #ebebeb;
+    color: #221f3b;
     font-weight: bold;
     /* justify-content: center; */
     display: flex;
@@ -153,6 +169,7 @@ input {
     /* background-color: #111; */
     display: flex;
     flex: 1;
+    background-color: rgb(205, 225, 242);
 }
 
 .signup-form-table tfoot{
@@ -186,19 +203,22 @@ label[for="profile-img-upload"]{
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    color: #221f3b;
+    font-family: "SCD3";
 }
 
 #btn-signup{
-    border: 3px solid #065c6f;
-    width: 90%;
-    min-width: 100%;
-    display: flex;
     position: relative;
+    display: flex;
+    width: 65%;
+    height: 50%;
+    border: 2px solid #065c6f;
     justify-content: center;
     align-items: center;
-    background: #000;
-    color: #f4f4f4;
     border-radius: 50px;
+    color: #221f3b;
+    font-family: "SCD3";
+    background-color: rgb(205, 225, 242);
 }
 
 /* left login-form */

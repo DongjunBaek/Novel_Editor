@@ -38,7 +38,10 @@ input.error {
   margin-top: -12px;
 }
 
-
+/* common */
+.flex{
+  display: flex;
+}
 /*
   =============================== font-css ===============================
 */
