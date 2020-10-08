@@ -11,9 +11,24 @@ function BoardDetail(props) {
 
     const [ contentVal , setContentVal ] =  useState ( ' ' );
 
+    const onSubmitBoard = () => {
+        let body = {
+
+        }
+        var data = 
+        console.log('quill ')
+        console.log('Board Submit Btn', body);
+    }
+
     useEffect(() => {
         // console.log(props.location.state.writeYN);
     })
+
+    const setContentValHandler = e => {
+        // console.log('setContentValHandler');
+        // console.log(e);
+        setContentVal(e);
+    }
 
     function quillDiv(writeYN){
         if (writeYN == 'N') {
@@ -29,6 +44,7 @@ function BoardDetail(props) {
             <ReactQuill
                 className="react-quill"
                 value="에디터모드"
+                onChange = {setContentValHandler}
             />
             </div>
         } else {
@@ -78,7 +94,9 @@ function BoardDetail(props) {
                         <div className="board-text">
                             {quillDiv(props.location.state.writeYN)}
                         </div>
-
+                        <div>
+                            <button type="button" onClick={ onSubmitBoard }> 저장하기</button>
+                        </div>
                     </div>
                 </div>
             </article>
