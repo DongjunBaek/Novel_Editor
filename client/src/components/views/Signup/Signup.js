@@ -180,7 +180,11 @@ function Signup(props) {
                                 </tr>
                             </tbody>
                             <tfoot>
-                                <button type="button" className="btn" id="btn-signup" onClick={onSignUpSumbit}>Sign Up</button>
+                                <tr>
+                                    <td>
+                                        <button type="button" className="btn" id="btn-signup" onClick={onSignUpSumbit}>Sign Up</button>
+                                    </td>
+                                </tr>
                             </tfoot>
                         </table>                    
                     </form>

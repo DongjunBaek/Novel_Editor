@@ -73,22 +73,24 @@ function BoardDetail(props) {
                     <div className="board-content ">
                         <div className="board-info ">
                             <ul className="board-info-ul">
-                                <li>글 번호</li>
-                                <li></li>                                
-                                <li>작성 날짜</li>
-                                <li></li>                                
-                                <li>조회 수</li>
-                                <li></li>                                
-                                <li>추천 수</li>
-                                <li></li>                                
+                                <li>No.</li>
+                                <li>1</li>                                
+                                <li>Views</li>
+                                <li>0</li>                                
+                                <li>Likes</li>
+                                <li>0</li>                
+                            </ul>
+                            <ul className="board-info-ul">
+                                <li>Writer</li>
+                                <li>안좋아</li>                        
+                                <li>Date</li>
+                                <li>2020-10-09</li>        
                             </ul>
                         </div>
                         <div className="board-title ">
                             <ul className="board-info-ul">
-                                <li>제목</li>
-                                <li></li>
-                                <li>작성자</li>
-                                <li></li>
+                                <li>Title</li>
+                                <li style={{"flex":"3"}}>토요일밤이 좋아</li>
                             </ul>
                         </div>
                         <div className="board-text">
