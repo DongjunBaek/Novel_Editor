@@ -122,6 +122,30 @@ div.ql-container .ql-editor{
     display: flex;
     flex: 1;
 }
+.board-btn-container{
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.board-saveBtn{
+    position: relative;
+    display: flex;
+    /* flex: 1; */
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 45%;
+    background-color: #FFC7C7;
+    border: none;
+    color: #ee8a06;
+    font-size: 1.5em;
+    font-family: "3SCD";
+
+}
 
 /* test border */
 .test {

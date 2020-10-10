@@ -9,24 +9,21 @@ import "react-quill/dist/quill.snow.css";
 // BOARD_DETAILPAGE
 function BoardDetail(props) {
 
-    const [ contentVal , setContentVal ] =  useState ( ' ' );
+    const [ contentVal , setContentVal ] =  useState ('에디터모드');
 
     const onSubmitBoard = () => {
         let body = {
-
+            ContentVal : contentVal
         }
-        var data = 
-        console.log('quill ')
-        console.log('Board Submit Btn', body);
+        console.log(body);
     }
 
     useEffect(() => {
         // console.log(props.location.state.writeYN);
     })
+    
 
     const setContentValHandler = e => {
-        // console.log('setContentValHandler');
-        // console.log(e);
         setContentVal(e);
     }
 
@@ -43,7 +40,7 @@ function BoardDetail(props) {
             return <div>
             <ReactQuill
                 className="react-quill"
-                value="에디터모드"
+                value={contentVal}
                 onChange = {setContentValHandler}
             />
             </div>
@@ -96,8 +93,8 @@ function BoardDetail(props) {
                         <div className="board-text">
                             {quillDiv(props.location.state.writeYN)}
                         </div>
-                        <div>
-                            <button type="button" onClick={ onSubmitBoard }> 저장하기</button>
+                        <div className="board-btn-container">
+                            <button type="button" className="board-saveBtn" onClick={ onSubmitBoard }> 저장하기</button>
                         </div>
                     </div>
                 </div>
