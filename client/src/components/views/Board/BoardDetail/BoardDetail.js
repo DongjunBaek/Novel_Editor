@@ -10,12 +10,15 @@ import "react-quill/dist/quill.snow.css";
 function BoardDetail(props) {
 
     const [ contentVal , setContentVal ] =  useState ('에디터모드');
+    const [ contentTitle , setContentTitle ] =  useState ('');
 
     const onSubmitBoard = () => {
         let body = {
+            ContentTitle : contentTitle,
             ContentVal : contentVal
         }
-        console.log(body);
+        console.log('제목 입력 : >> ',body.ContentTitle);
+        console.log('내용 입력 : >>',body.ContentVal);
     }
 
     useEffect(() => {
@@ -25,6 +28,11 @@ function BoardDetail(props) {
 
     const setContentValHandler = e => {
         setContentVal(e);
+    }
+
+    const setContentTitleHandler = e => {
+        // console.log(e.currentTarget.value);
+        setContentTitle(e.currentTarget.value);
     }
 
     function quillDiv(writeYN){
@@ -68,26 +76,33 @@ function BoardDetail(props) {
                     </div>
 
                     <div className="board-content ">
-                        <div className="board-info ">
-                            <ul className="board-info-ul">
-                                <li>No.</li>
-                                <li>1</li>                                
-                                <li>Views</li>
-                                <li>0</li>                                
-                                <li>Likes</li>
-                                <li>0</li>                
-                            </ul>
-                            <ul className="board-info-ul">
-                                <li>Writer</li>
-                                <li>안좋아</li>                        
-                                <li>Date</li>
-                                <li>2020-10-09</li>        
-                            </ul>
-                        </div>
+                            <div className="board-info ">
+                                {props.location.state.writeYN == 'N' &&
+                                    <ul className="board-info-ul">
+                                        <li>No.</li>
+                                        <li>1</li>                                
+                                        <li>Views</li>
+                                        <li>0</li>                                
+                                        <li>Likes</li>
+                                        <li>0</li>                
+                                    </ul>
+                                }
+                                {props.location.state.writeYN == 'N' &&
+                                    <ul className="board-info-ul">
+                                        <li>Writer</li>
+                                        <li>안좋아</li>                        
+                                        <li>Date</li>
+                                        <li>2020-10-09</li>        
+                                    </ul>
+                                }   
+                            </div>
+                        
                         <div className="board-title ">
                             <ul className="board-info-ul">
                                 <li>Title</li>
-                                <li style={{"flex":"3"}}>토요일밤이 좋아</li>
+                                <li style={{"flex":"3"}} >
+                                    <input name="title" id="board-title-input" onChange={setContentTitleHandler} value={contentTitle} placeholder="제목을 입력해 주세요" />
+                                </li>
                             </ul>
                         </div>
                         <div className="board-text">
