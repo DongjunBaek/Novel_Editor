@@ -139,14 +139,19 @@ div.ql-container .ql-editor{
     align-items: center;
     width: 20%;
     height: 45%;
-    background-color: #FFC7C7;
+    background-color: #f4f4f4;
     border: none;
-    color: #ee8a06;
+    color: #0657ee;
     font-size: 1.5em;
     font-family: "3SCD";
+    border: 1.5px solid #FFC7C7;
 
 }
 
+#board-title-input{
+    display: flex;
+    flex: 1;
+}
 /* test border */
 .test {
     /* border: 1px solid rgba(0, 0, 255, 0.356) */

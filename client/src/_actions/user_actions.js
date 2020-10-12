@@ -4,7 +4,8 @@ import {
     REGISTER_USER,
     AUTH_USER,
     LOGOUT_USER,
-    SIGNUP_USER
+    SIGNUP_USER,
+    
 } from './types';
 import { USER_SERVER } from '../components/Config.js';
 

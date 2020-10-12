@@ -1,5 +1,7 @@
 import React, {useState, useEffect}  from 'react'
 import '../BoardDetail/BoardDetail.css';
+import { insertBoard } from "../../../../_actions/board_actions";
+import { useDispatch } from "react-redux";
 
 // 리액트 퀼
 import ReactQuill from "react-quill";
@@ -12,13 +14,34 @@ function BoardDetail(props) {
     const [ contentVal , setContentVal ] =  useState ('에디터모드');
     const [ contentTitle , setContentTitle ] =  useState ('');
 
+    const dispatch = useDispatch();
+
     const onSubmitBoard = () => {
         let body = {
-            ContentTitle : contentTitle,
-            ContentVal : contentVal
+            no : 0,
+            title : contentTitle,
+            contents : contentVal,
+            readCount : 0,
+            like : 0,
+            author : dongjun,
+            comments : '소설임',
+            reply : '비고',
         }
         console.log('제목 입력 : >> ',body.ContentTitle);
         console.log('내용 입력 : >>',body.ContentVal);
+
+        return (
+            dispatch(insertBoard(body)).then(response => {
+                console.log(response.payload)
+                if(response.payload.success){
+                    console.log('Add board', response.payload.success)
+                    props.history.push("/");
+                }else {
+                    alert('Failed Sign up')
+                }
+            })
+        )
+
     }
 
     useEffect(() => {
@@ -57,6 +80,8 @@ function BoardDetail(props) {
         }
     }
 
+
+    
     
 
     return (
