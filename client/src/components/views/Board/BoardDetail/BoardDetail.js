@@ -23,7 +23,7 @@ function BoardDetail(props) {
             contents : contentVal,
             readCount : 0,
             like : 0,
-            author : dongjun,
+            author : 'dongjun',
             comments : '소설임',
             reply : '비고',
         }

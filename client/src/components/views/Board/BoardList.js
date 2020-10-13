@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import '../Board/BoardList.css'
 import { Link } from "react-router-dom";
-
-
+import axios from 'axios';
 
 
 function BoardList(props) {
@@ -14,14 +13,38 @@ function BoardList(props) {
     const onReaderMode = () => {
         props.history.push('/boardDetail',{ writeYN: 'N'});
     }
-    
-    // useEffect(() => {
-    //     // console.log('컴포넌트가 화면에 나타남');
-    //     return () => {
-    //         // console.log('컴포넌트가 화면에서 사라짐');
-    //     };
-    // }, []);
 
+    const [Skip, setSkip] = useState(0);
+    const [Limit, setLimit] = useState(10);
+
+    useEffect(() => {
+
+        let body = {
+            skip : Skip,
+            limit : Limit
+        }
+        
+        getBoards(body)
+
+    }, [])
+
+    const getBoards= (body) => {
+
+        axios.post('/api/board/boardList', body)
+        .then(response => {
+            if(response.data.success){
+                // console.log(response.data);
+                if(body.loadMore){
+                    // setProducts([...Products, ...response.data.productInfo])
+                }else {
+                    // setProducts(response.data.productInfo)                    
+                }
+                // setPostSize(response.data.PostSize)
+            }else {
+                alert('상품 정보를 가져오는 것에 실패했습니다.')
+            }
+        })
+    }
     return (
         <section className="app main-container border">
             <article className="boardList-article-container">
@@ -70,71 +93,6 @@ function BoardList(props) {
                             <tr onClick = { onReaderMode }>
                                 <td>1</td>
                                 <td>제목</td>
-                                <td>writer</td>
-                                <td>20-07-31</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-
-                            <tr>
-                                <td>1</td>
-                                <td>Title</td>
-                                <td>writer</td>
-                                <td>20-07-31</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Title</td>
-                                <td>writer</td>
-                                <td>20-07-31</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Title</td>
-                                <td>writer</td>
-                                <td>20-07-31</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Title</td>
-                                <td>writer</td>
-                                <td>20-07-31</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Title</td>
-                                <td>writer</td>
-                                <td>20-07-31</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Title</td>
-                                <td>writer</td>
-                                <td>20-07-31</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Title</td>
-                                <td>writer</td>
-                                <td>20-07-31</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Title</td>
                                 <td>writer</td>
                                 <td>20-07-31</td>
                                 <td>0</td>

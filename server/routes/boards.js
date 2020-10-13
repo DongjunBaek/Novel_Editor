@@ -18,13 +18,10 @@ router.post("/insert", (req, res) => {
             return res.status(200).json({success : true});
         }
     })
+});
+router.get("/boardList", (req, res) => {
 
-    // user.save((err, doc) => {
-    //     if (err) return res.json({ success: false, err });
-    //     return res.status(200).json({
-    //         success: true
-    //     });
-    // });
+    
 });
 
 module.exports = router;
