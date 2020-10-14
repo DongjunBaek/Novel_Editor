@@ -30,16 +30,11 @@ function BoardList(props) {
 
     const getBoards= (body) => {
 
-        axios.post('/api/board/boardList', body)
+        axios.get('/api/board/boardList', body)
         .then(response => {
             if(response.data.success){
                 // console.log(response.data);
-                if(body.loadMore){
-                    // setProducts([...Products, ...response.data.productInfo])
-                }else {
-                    // setProducts(response.data.productInfo)                    
-                }
-                // setPostSize(response.data.PostSize)
+                console.log('boardList',response.data.boardList);
             }else {
                 alert('상품 정보를 가져오는 것에 실패했습니다.')
             }

@@ -8,11 +8,11 @@ const { Board } = require('../models/Board');
 
 router.post("/insert", (req, res) => {
 
-    const board = new Board(req.body);
+    const Board = new Board(req.body);
 
     console.log('board',board);
 
-    board.save((err,doc)=>{
+    Board.save((err,doc)=>{
         if(err) return res.json({success : false, err});
         else {
             return res.status(200).json({success : true});
@@ -21,7 +21,17 @@ router.post("/insert", (req, res) => {
 });
 router.get("/boardList", (req, res) => {
 
-    
+    console.log('Request BoardList ')
+
+    Board.find()
+    // .find( { $text : { $search : term } })
+    .exec((err, boardList)=>{
+        if(err) return res.status(400).json({success : false, err})
+                    
+        return res.status(200).json({success : true, boardList})
+    })
+
+
 });
 
 module.exports = router;
