@@ -16,6 +16,7 @@ function BoardList(props) {
 
     const [Skip, setSkip] = useState(0);
     const [Limit, setLimit] = useState(10);
+    const [BoardList, setBoardList] = useState([]);
 
     useEffect(() => {
 
@@ -35,11 +36,34 @@ function BoardList(props) {
             if(response.data.success){
                 // console.log(response.data);
                 console.log('boardList',response.data.boardList);
+                setBoardList([response.data.boardList]);
             }else {
                 alert('상품 정보를 가져오는 것에 실패했습니다.')
             }
         })
     }
+
+    const getDate = (str) => {
+        return str.substring(0,10);
+    }
+    const renderBoardList = BoardList.map((board, index)=>{
+
+        console.log('board', board[0]);
+        
+        return (
+            <tr key={index} >
+                <td>{index}</td>
+                <td>{board[index].title}</td>
+                <td>{board[index].author}</td>
+                <td>{getDate(board[index].date)}</td>
+                <td>{board[index].readCount}</td>
+                <td>{board[index].like}</td>
+            </tr>
+        )
+    })
+
+
+
     return (
         <section className="app main-container border">
             <article className="boardList-article-container">
@@ -93,14 +117,7 @@ function BoardList(props) {
                                 <td>0</td>
                                 <td>0</td>
                             </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Title</td>
-                                <td>writer</td>
-                                <td>20-07-31</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
+                            {renderBoardList}
                         </tbody>
                         <tfoot>
 

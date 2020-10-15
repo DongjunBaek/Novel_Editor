@@ -34,6 +34,10 @@ const boardSchema = mongoose.Schema({
     images : {
         type : Array,
         default : []
+    },
+    date : {
+        type : Date,
+        default : Date.now
     }
 })
 
