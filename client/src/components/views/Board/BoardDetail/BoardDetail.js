@@ -17,15 +17,14 @@ function BoardDetail(props) {
     const dispatch = useDispatch();
 
     const onSubmitBoard = () => {
-        let body = {
-            no : 0,
+        let body = {            
             title : contentTitle,
             contents : contentVal,
             readCount : 0,
             like : 0,
             author : 'dongjun',
             comments : '소설임',
-            reply : '비고',
+            reply : '비고'
         }
         console.log('제목 입력 : >> ',body.ContentTitle);
         console.log('내용 입력 : >>',body.ContentVal);
