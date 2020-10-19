@@ -1,7 +1,6 @@
 import axios from 'axios';
 import {
     INSERT_BOARD
-    
 } from './types';
 
 import { BOARD_ROUTE } from '../components/Config.js';
@@ -17,4 +16,3 @@ export function insertBoard(board){
         payload  : request
     }
 }
-

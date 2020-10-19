@@ -23,7 +23,7 @@ router.get("/getBoardNo", (req, res) => {
 
     console.log('getBoardNo')
 
-    Board.find()
+    Common.find()
     // .find( { $text : { $search : term } })
     .exec((err, no)=>{
         if(err) return res.status(400).json({success : false, err})

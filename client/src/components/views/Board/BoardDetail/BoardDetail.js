@@ -1,6 +1,7 @@
 import React, {useState, useEffect}  from 'react'
 import '../BoardDetail/BoardDetail.css';
 import { insertBoard } from "../../../../_actions/board_actions";
+import { getBoardNo } from "../../../../_actions/common_actions";
 import { useDispatch } from "react-redux";
 
 // 리액트 퀼
@@ -41,6 +42,15 @@ function BoardDetail(props) {
             })
         )
 
+    }
+
+    const onGetboardNo = () => {
+        return (
+            dispatch(getBoardNo()).then(response => {
+                console.log(response.payload.no[0].boardNo);
+
+            })
+        )
     }
 
     useEffect(() => {
@@ -134,6 +144,7 @@ function BoardDetail(props) {
                         </div>
                         <div className="board-btn-container">
                             <button type="button" className="board-saveBtn" onClick={ onSubmitBoard }> 저장하기</button>
+                            <button type="button" className="board-saveBtn" onClick={ onGetboardNo }> 게시글번호가져오기</button>
                         </div>
                     </div>
                 </div>

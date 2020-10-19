@@ -7,7 +7,10 @@ const mongoose = require('mongoose');
 // field
 // 글번호, 글제목, 글내용, 조회수, 좋아요수, 싫어요수, 별점, 작성자, 비고, 댓글
 const boardSchema = mongoose.Schema({
-
+    no : {
+        type : Number,
+        default : 0
+    },
     title : {
         type : String
     },

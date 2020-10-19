@@ -5,3 +5,5 @@ export const LOGOUT_USER = 'logout_user';
 export const SIGNUP_USER = 'signup_user';
 // 2020.10.12 게시판 등록
 export const INSERT_BOARD = 'insert_board';
+// 2020.10.19 게시글 번호불러오기
+export const GET_BOARDNO = 'get_board';
