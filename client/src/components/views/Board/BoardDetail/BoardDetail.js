@@ -47,7 +47,7 @@ function BoardDetail(props) {
     const onGetboardNo = () => {
         return (
             dispatch(getBoardNo()).then(response => {
-                console.log(response.payload.no[0].boardNo);
+                console.log(response.payload);
 
             })
         )

@@ -8,15 +8,10 @@ const mongoose = require('mongoose');
 // 일반게시판 글번호, 소설게시판 글번호, 유저번호 등등
 const commonSchema = mongoose.Schema({
 
-    boardNo : {
-        type : Number,
-        default : 0
+    seqName : {
+        type : String
     },
-    NovelNo : {
-        type : Number,
-        default : 0
-    },
-    UserNo : {
+    no : {
         type : Number,
         default : 0
     }
