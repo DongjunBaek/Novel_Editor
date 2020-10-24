@@ -11,6 +11,7 @@ function BoardList(props) {
     }
     
     const onReaderMode = () => {
+        // console.log('eeeeeeeeeeee',no);
         props.history.push('/boardDetail',{ writeYN: 'N'});
     }
 
@@ -35,10 +36,10 @@ function BoardList(props) {
         .then(response => {
             if(response.data.success){
                 // console.log(response.data);
-                console.log('boardList',response.data.boardList);
-                setBoardList([response.data.boardList]);
+                console.log('response.data.boardList',response.data.boardList);
+                setBoardList(response.data.boardList);
             }else {
-                alert('상품 정보를 가져오는 것에 실패했습니다.')
+                alert('게시판 리스트를 가져오는 것에 실패했습니다.')
             }
         })
     }
@@ -47,19 +48,17 @@ function BoardList(props) {
         return str.substring(0,10);
     }
     const renderBoardList = BoardList.map((board, index)=>{
-
-        console.log('board', board[0]);
+        // console.log(index+"=========="+board);
+        // console.log(board.no);
+        return <tr key={index} onClick = { onReaderMode } no={board.no}>
+                    <td>{index}</td>
+                    <td>{board.title}</td>
+                    <td>{board.author}</td>
+                    <td>{getDate(board.date)}</td>
+                    <td>{board.readCount}</td>
+                    <td>{board.like}</td>
+                </tr>
         
-        return (
-            <tr key={index} >
-                <td>{index}</td>
-                <td>{board[index].title}</td>
-                <td>{board[index].author}</td>
-                <td>{getDate(board[index].date)}</td>
-                <td>{board[index].readCount}</td>
-                <td>{board[index].like}</td>
-            </tr>
-        )
     })
 
 
@@ -93,14 +92,9 @@ function BoardList(props) {
                                     <button onClick = { onEditorMode }>글쓰기</button>
                                 </td>
                             </tr>
-                            {/* <tr>
-                                <td></td>
-                            </tr> */}
                         </thead>
                         <tbody>
-                            {/* 
-                                1 5 1 1 1 1
-                            */}
+
                             <tr>
                                 <th>번호</th>
                                 <th>제목</th>
@@ -108,14 +102,6 @@ function BoardList(props) {
                                 <th>작성날짜</th>
                                 <th>조회 수</th>
                                 <th>추천 수</th>
-                            </tr>
-                            <tr onClick = { onReaderMode }>
-                                <td>1</td>
-                                <td>제목</td>
-                                <td>writer</td>
-                                <td>20-07-31</td>
-                                <td>0</td>
-                                <td>0</td>
                             </tr>
                             {renderBoardList}
                         </tbody>

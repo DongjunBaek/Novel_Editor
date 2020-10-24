@@ -14,6 +14,7 @@ function BoardDetail(props) {
 
     const [ contentVal , setContentVal ] =  useState ('에디터모드');
     const [ contentTitle , setContentTitle ] =  useState ('');
+    const boardNo = props.match.params;
 
     const dispatch = useDispatch();
 
@@ -55,6 +56,7 @@ function BoardDetail(props) {
 
     useEffect(() => {
         // console.log(props.location.state.writeYN);
+        console.log('selected board no =====', boardNo);
     })
     
 
