@@ -10,9 +10,9 @@ function BoardList(props) {
         props.history.push('/boardDetail',{ writeYN: 'Y'});
     }
     
-    const onReaderMode = () => {
-        // console.log('eeeeeeeeeeee',no);
-        props.history.push('/boardDetail',{ writeYN: 'N'});
+    const onReaderMode = (no) => {
+        console.log('eeeeeeeeeeee',no);
+        props.history.push('/boardDetail',{ writeYN: 'N', boardno : no});
     }
 
     const [Skip, setSkip] = useState(0);
@@ -50,7 +50,7 @@ function BoardList(props) {
     const renderBoardList = BoardList.map((board, index)=>{
         // console.log(index+"=========="+board);
         // console.log(board.no);
-        return <tr key={index} onClick = { onReaderMode } no={board.no}>
+        return <tr key={index} onClick = { () => onReaderMode(board.no) } no={board.no}>
                     <td>{index}</td>
                     <td>{board.title}</td>
                     <td>{board.author}</td>

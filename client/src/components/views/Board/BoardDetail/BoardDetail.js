@@ -14,7 +14,7 @@ function BoardDetail(props) {
 
     const [ contentVal , setContentVal ] =  useState ('에디터모드');
     const [ contentTitle , setContentTitle ] =  useState ('');
-    const boardNo = props.match.params;
+    const boardNo = props.location.state.boardno;
 
     const dispatch = useDispatch();
 
