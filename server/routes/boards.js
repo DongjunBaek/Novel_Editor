@@ -35,7 +35,7 @@ router.post("/insert", (req, res) => {
 });
 router.get("/boardList", (req, res) => {
 
-    console.log('Request BoardList ')
+    console.log('Request BoardList ');
 
     Board.find()
     // .find( { $text : { $search : term } })
@@ -47,5 +47,15 @@ router.get("/boardList", (req, res) => {
 
 
 });
+
+router.get('/selectBoard', (req,res)=>{
+    console.log('Request selectBoard ');
+
+    if(err) return res.status(400).json({success : false, err})
+                    
+    return res.status(200).json({success : true})
+
+})
+
 
 module.exports = router;

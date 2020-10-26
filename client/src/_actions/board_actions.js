@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {
     INSERT_BOARD
+    , SELECT_BOARD
 } from './types';
 
 import { BOARD_ROUTE } from '../components/Config.js';
@@ -13,6 +14,19 @@ export function insertBoard(board){
 
     return {
         type : INSERT_BOARD,
+        payload  : request
+    }
+}
+
+export function selectBoard(boardNo){
+
+    const request = axios.post(`${BOARD_ROUTE}/selectBoard`, boardNo)
+        .then(response => response.data);
+
+    console.log('게시글 번호 : >>>> '+boardNo);
+
+    return {
+        type : SELECT_BOARD,
         payload  : request
     }
 }

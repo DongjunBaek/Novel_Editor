@@ -8,6 +8,8 @@ import { useDispatch } from "react-redux";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
+//axios
+import axios from 'axios';
 
 // BOARD_DETAILPAGE
 function BoardDetail(props) {
@@ -57,6 +59,17 @@ function BoardDetail(props) {
     useEffect(() => {
         // console.log(props.location.state.writeYN);
         console.log('selected board no =====', boardNo);
+        if (boardNo != '') {
+            dispatch(selectBoard(boardNo)).then(response => {
+                console.log(response.payload);
+
+                if(response.payload.success){
+                    console.log('success');
+                }else {
+                    console.log('err');
+                }
+            })
+        }
     })
     
 
@@ -116,19 +129,19 @@ function BoardDetail(props) {
                                 {props.location.state.writeYN == 'N' &&
                                     <ul className="board-info-ul">
                                         <li>No.</li>
-                                        <li>1</li>                                
+                                        <li></li>                                
                                         <li>Views</li>
-                                        <li>0</li>                                
+                                        <li></li>                                
                                         <li>Likes</li>
-                                        <li>0</li>                
+                                        <li></li>                
                                     </ul>
                                 }
                                 {props.location.state.writeYN == 'N' &&
                                     <ul className="board-info-ul">
                                         <li>Writer</li>
-                                        <li>안좋아</li>                        
+                                        <li></li>                        
                                         <li>Date</li>
-                                        <li>2020-10-09</li>        
+                                        <li></li>        
                                     </ul>
                                 }   
                             </div>
