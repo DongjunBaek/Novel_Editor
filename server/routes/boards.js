@@ -35,7 +35,8 @@ router.post("/insert", (req, res) => {
 });
 router.get("/boardList", (req, res) => {
 
-    console.log('Request BoardList ');
+    // console.log('Request BoardList ==req',req);
+    // console.log('Request BoardList ==res',res);
 
     Board.find()
     // .find( { $text : { $search : term } })
@@ -50,10 +51,17 @@ router.get("/boardList", (req, res) => {
 
 router.get('/selectBoard', (req,res)=>{
     console.log('Request selectBoard ');
-
-    if(err) return res.status(400).json({success : false, err})
+    console.log(req.query.boardNo);
+    
+    Board
+    .find({no : req.query.boardNo})
+    .exec((err, boardDetail) => {
+        if(err) return res.status(400).json({success : false, err})
                     
-    return res.status(200).json({success : true})
+        console.log('boardDetail',boardDetail);
+        return res.status(200).json({success : true, boardDetail})
+    })
+    
 
 })
 

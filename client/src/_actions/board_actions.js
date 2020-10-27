@@ -19,8 +19,8 @@ export function insertBoard(board){
 }
 
 export function selectBoard(boardNo){
-
-    const request = axios.post(`${BOARD_ROUTE}/selectBoard`, boardNo)
+    const request = 
+    axios.get(`${BOARD_ROUTE}/selectBoard?boardNo=`+boardNo+'&type=single')
         .then(response => response.data);
 
     console.log('게시글 번호 : >>>> '+boardNo);

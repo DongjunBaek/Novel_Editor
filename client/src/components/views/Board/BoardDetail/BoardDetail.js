@@ -1,15 +1,12 @@
 import React, {useState, useEffect}  from 'react'
 import '../BoardDetail/BoardDetail.css';
-import { insertBoard } from "../../../../_actions/board_actions";
+import { insertBoard, selectBoard } from "../../../../_actions/board_actions";
 import { getBoardNo } from "../../../../_actions/common_actions";
 import { useDispatch } from "react-redux";
 
 // 리액트 퀼
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
-
-//axios
-import axios from 'axios';
 
 // BOARD_DETAILPAGE
 function BoardDetail(props) {
@@ -59,7 +56,8 @@ function BoardDetail(props) {
     useEffect(() => {
         // console.log(props.location.state.writeYN);
         console.log('selected board no =====', boardNo);
-        if (boardNo != '') {
+        if (boardNo > -1) {
+            console.log('onLoadBoardDetail')
             dispatch(selectBoard(boardNo)).then(response => {
                 console.log(response.payload);
 
