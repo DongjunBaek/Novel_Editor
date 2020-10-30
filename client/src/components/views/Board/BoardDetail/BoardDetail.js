@@ -14,10 +14,13 @@ function BoardDetail(props) {
     const [ contentVal , setContentVal ] =  useState ('에디터모드');
     const [ contentTitle , setContentTitle ] =  useState ('');
     const boardNo = props.location.state.boardno;
-
+    
     const dispatch = useDispatch();
 
+    const [board, setboard] = useState([]);
+
     const onSubmitBoard = () => {
+
         let body = {            
             title : contentTitle,
             contents : contentVal,
@@ -59,16 +62,23 @@ function BoardDetail(props) {
         if (boardNo > -1) {
             console.log('onLoadBoardDetail')
             dispatch(selectBoard(boardNo)).then(response => {
-                console.log(response.payload);
+                // console.log(response.payload);
 
                 if(response.payload.success){
-                    console.log('success');
+                    // console.log('success');
+                    console.log(response.payload.boardDetail[0]);
+                    setboard(response.payload.boardDetail[0]);
+                    setContentVal(response.payload.boardDetail[0].contents);
+                    setContentTitle(response.payload.boardDetail[0].title);
                 }else {
                     console.log('err');
                 }
             })
         }
-    })
+        // console.log('board');
+        // console.log(board);
+
+    },[])
     
 
     const setContentValHandler = e => {
@@ -101,6 +111,7 @@ function BoardDetail(props) {
             alert('오류얌');
         }
     }
+    
 
 
     
@@ -127,19 +138,19 @@ function BoardDetail(props) {
                                 {props.location.state.writeYN == 'N' &&
                                     <ul className="board-info-ul">
                                         <li>No.</li>
-                                        <li></li>                                
+                                        <li>{board.no}</li>                                
                                         <li>Views</li>
-                                        <li></li>                                
+                                        <li>{board.readCount}</li>                                
                                         <li>Likes</li>
-                                        <li></li>                
+                                        <li>{board.like}</li>                
                                     </ul>
                                 }
                                 {props.location.state.writeYN == 'N' &&
                                     <ul className="board-info-ul">
                                         <li>Writer</li>
-                                        <li></li>                        
+                                        <li>{board.author}</li>                        
                                         <li>Date</li>
-                                        <li></li>        
+                                        <li>{board.date} </li>        
                                     </ul>
                                 }   
                             </div>
