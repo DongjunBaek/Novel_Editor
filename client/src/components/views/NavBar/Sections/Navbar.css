@@ -1,4 +1,4 @@
-.logo{
+/* .logo{
   color : #1c2135;  
 }
 .nav{
@@ -7,14 +7,12 @@
   height: 100px;
   position: absolute;
   z-index: 1;
-  /* background-color: #111; */
 }
 .nav-ul{
   display: flex;
   width: 100%;
   height: 100%;
   list-style-type: none;
-  /* background-color: #ebebeb; */
   position: relative;
   justify-content: flex-end;
   margin-right: 5%;
@@ -39,27 +37,4 @@
 .nav-ul li a:visited{
   color: #2894ff;
 }
-
-/* @media (max-width: 767px) {
-  .menu__mobile-button {
-    display: inline-block !important;
-  }
-
-  .menu_left,
-  .menu_rigth {
-    display: none;
-  }
-
-  .menu__logo a {
-    margin-left: -20px;
-  }
-
-  .menu__container .ant-menu-item,
-  .menu__container .ant-menu-submenu-title {
-    padding: 1px 20px;
-  }
-
-  .menu__logo a {
-    padding: 10px 20px;
-  }
-} */
+ */

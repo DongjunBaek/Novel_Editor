@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Sections/Navbar.css';
+// import './Sections/Navbar.css';
 import Btn from '../Common/btn';
 
 function NavBar() {

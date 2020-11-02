@@ -1,11 +1,9 @@
-/* common */
+/* common
 .border {
-    /* border: 1px solid orangered;     */
 }
 .flex {
     display: flex;
 }
-/* boardList-section */
 .novelList-section{
     display: flex;
     position: relative;
@@ -18,7 +16,6 @@
     display: flex;
     flex: 4;
 }
-/* NovelList */
 .NovelTable {
     display: flex;
     position: relative;
@@ -41,13 +38,11 @@
     display: flex;
     flex: 1;
     flex-direction: row;
-    /* border: 1px solid orangered;     */
 }
 
 .NovelTable th, .NovelTable td {
     display: flex;
     flex: 1;
-    /* border: orangered 1px solid; */
     height: 36px;
 }
 
@@ -60,4 +55,4 @@
     border: 1px solid red;
     
 }
-
+ */
