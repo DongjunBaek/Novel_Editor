@@ -12,23 +12,38 @@ body{
 /* nav */
 .nav{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   justify-content: center;
   align-items: center;
   height: 60px;
 }
+.logo-container{
+  display: flex;
+  width: 25%;
+  height: 100%;
+}
 .nav-ul{
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 65%;
   justify-content: center;
   align-items: center;
 }
 .nav-ul li{
   display: flex;
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: right;
+  margin-left: 5%;
+}
+.nav-ul li a{
+  display: flex;
   flex: 1;
   width: 75px;
+  justify-content: center;
+  align-items: center;
 }
 
 .root-container{

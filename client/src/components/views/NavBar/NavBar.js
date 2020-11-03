@@ -16,6 +16,9 @@ function NavBar() {
     //   </ul>
     // </div>
     <div className="nav">
+      <div className="logo-container">
+        <img src="" id="logo" />
+      </div>
       <ul className="nav-ul">
         <li><Btn href="/" btnNm="HOME" /></li>
         <li><Btn href="/BoardList" btnNm="BoardList" /></li>
