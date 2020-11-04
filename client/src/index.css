@@ -2,12 +2,14 @@ body{
   display: flex;
   border: 1px solid red;
   justify-content: center;
+  background-image: url(../src/images/indexBg.png);
 }
 #root{
   display: flex;
   width: 1920px;
   border: 1px solid red;
   min-height: 960px;
+  flex-direction: column;
 }
 /* nav */
 .nav{
@@ -46,12 +48,15 @@ body{
   align-items: center;
 }
 
-.root-container{
+#root-container{
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid aqua;
+  flex: 1;
 
 }
+
 
 /* body {
   margin: 0;

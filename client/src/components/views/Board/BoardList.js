@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import '../Board/BoardList.css'
+// import '../Board/BoardList.css'
 import { Link } from "react-router-dom";
 import axios from 'axios';
 
@@ -64,8 +64,7 @@ function BoardList(props) {
 
 
     return (
-        <section className="app main-container border">
-            <article className="boardList-article-container">
+            <article className="">
                 <div className="boardList-top">
                     <div id="board-list-title">
                         <h1>BoardList</h1>
@@ -122,7 +121,6 @@ function BoardList(props) {
                     </div>
                 </div>
             </article>
-        </section>
     )
 }
 
