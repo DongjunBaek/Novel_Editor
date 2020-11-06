@@ -38,18 +38,20 @@ function App() {
 
   return (
     <Suspense fallback={(<div>Loading...</div>)}>
-      <NavBar />
       <section id="root-container">
+        <NavBar />
         <Switch>
-          <Route exact path="/" component={Auth(LandingPage, null)} />
-          <Route exact path="/login" component={Auth(LoginPage, false)} />
-          <Route exact path="/register" component={Auth(RegisterPage, false)} />
-          <Route exact path="/boardList" component = {Auth(BoardList, false)} />
-          <Route exact path="/boardDetail" component={Auth(boardDetail, false)}  />
-          <Route exact path="/NovelList" component = {Auth(NovelList, false)} />
-          <Route exact path="/novelDetail" component = {Auth(novelDetail, false)} />
-          <Route exact path="/signup" component = {Auth(Signup, false)} />
-          <Route exact path="/success" component={Auth(Success, false)}  />          
+          <section id="root-section">
+            <Route exact path="/" component={Auth(LandingPage, null)} />
+            <Route exact path="/login" component={Auth(LoginPage, false)} />
+            <Route exact path="/register" component={Auth(RegisterPage, false)} />
+            <Route exact path="/boardList" component = {Auth(BoardList, false)} />
+            <Route exact path="/boardDetail" component={Auth(boardDetail, false)}  />
+            <Route exact path="/NovelList" component = {Auth(NovelList, false)} />
+            <Route exact path="/novelDetail" component = {Auth(novelDetail, false)} />
+            <Route exact path="/signup" component = {Auth(Signup, false)} />
+            <Route exact path="/success" component={Auth(Success, false)}  />          
+          </section>
         </Switch>
       </section>
       {/* <Footer /> */}
