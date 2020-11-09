@@ -1,5 +1,5 @@
 import React from 'react';
-import landing_img from '../../../../src/images/bg.jpg';
+import landing_img from '../../../../src/images/bg1.jpg';
 // import '../LandingPage/LandingPage.css';
 
 function LandingPage() {

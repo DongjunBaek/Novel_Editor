@@ -3,7 +3,7 @@ body{
   /* border: 1px solid red; */
   justify-content: center;
   background-image: url(../src/images/indexBg.png);
-  filter: brightness(0.85);
+  /* filter: brightness(0.85); */
 }
 #root{
   display: flex;
