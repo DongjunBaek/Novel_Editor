@@ -64,7 +64,7 @@ function BoardList(props) {
 
 
     return (
-            <article className="">
+            <article className="content-container">
                 <div className="boardList-top">
                     <div id="board-list-title">
                         <h1>BoardList</h1>
