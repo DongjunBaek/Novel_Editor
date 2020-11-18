@@ -50,7 +50,7 @@ function BoardList(props) {
     const renderBoardList = BoardList.map((board, index)=>{
         // console.log(index+"=========="+board);
         // console.log(board.no);
-        return <tr key={index} onClick = { () => onReaderMode(board.no) } no={board.no}>
+        return <tr key={index} onClick = { () => onReaderMode(board.no) } no={board.no} className="boardRow">
                     <td>{index}</td>
                     <td>{board.title}</td>
                     <td>{board.author}</td>
@@ -65,21 +65,20 @@ function BoardList(props) {
 
     return (
             <article className="content-container">
-                <div className="boardList-top">
-                    <div id="board-list-title">
-                        <h1>BoardList</h1>
-                    </div>
+                <div id="boardList-top">
+                    <h1>자유 게시판</h1>
                 </div>
-                <div className="boardList-container">
-                    <table className="BoardTable">
+                <div id="boardList-md">
+                    <table id="searchBox">
                         <thead>
                             <tr>
                                 <td>
-                                    <label htmlFor="search"></label>
-                                    <select name="search" id="search">
-                                        <option>제목</option>
-                                        <option>작성자</option>
-                                    </select>
+                                    <label htmlFor="search">
+                                        <select name="search" id="search">
+                                            <option>제목</option>
+                                            <option>작성자</option>
+                                        </select>
+                                    </label>
                                 </td>
                                 <td>
                                     <input type="text" id="searchBox" placeholder="검색어를 입력해 주세요." />
@@ -94,7 +93,7 @@ function BoardList(props) {
                         </thead>
                         <tbody>
 
-                            <tr>
+                            <tr className="blueTr">
                                 <th>번호</th>
                                 <th>제목</th>
                                 <th>작성자</th>
@@ -105,20 +104,17 @@ function BoardList(props) {
                             {renderBoardList}
                         </tbody>
                         <tfoot>
-
+                            <div id="boardList-bot-container">
+                                <button id="pre">이전</button>
+                                <button>1</button>
+                                <button>2</button>
+                                <button>3</button>
+                                <button>4</button>
+                                <button>5</button>
+                                <button id="next">다음</button>
+                            </div>
                         </tfoot>
                     </table>
-                </div>
-                <div className="boardList-bot">
-                    <div className="boardList-bot-container">
-                        <button id="pre">이전</button>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>4</button>
-                        <button>5</button>
-                        <button id="next">다음</button>
-                    </div>
                 </div>
             </article>
     )
