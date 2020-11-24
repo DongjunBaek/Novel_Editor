@@ -4,6 +4,7 @@ body{
   justify-content: center;
   background-image: url(../src/images/indexBg.png);
   /* filter: brightness(0.85); */
+  font-family: 'gsanLight';
 }
 #root{
   display: flex;
@@ -121,7 +122,7 @@ body{
   align-items: center;
 }
 #boardList-top h1{
-  margin-left: 2%;
+  margin: 2%;
   font-weight: bold;
   font-size: 4em;
 }
@@ -156,6 +157,7 @@ body{
   position: relative;
   flex: 15;
   flex-direction: column;
+  min-height: 45px;
 }
 #boardList-md .blueTr th:nth-child(1){
   display: flex;
@@ -183,7 +185,6 @@ body{
 }
 .blueTr{
   display: flex;
-  border-radius: 25px;
   background-color: #0162a7;
   flex: 2;
   justify-content: center;
@@ -200,9 +201,49 @@ body{
 }
 .boardRow{
   display: flex;
-  border-radius: 25px;
   flex: 1;
-  background-color: #3e9fb269;
+  background-color: #3e9fb223;
+}
+#boardList-md .boardRow td:nth-child(1){
+  display: flex;
+  flex: 1;
+  color: red;
+  justify-content: center;
+  align-items: center;
+}
+#boardList-md .boardRow td:nth-child(2){
+  display: flex;
+  flex: 7;
+  color: red;
+  align-items: center;
+}
+#boardList-md .boardRow td:nth-child(3){
+  display: flex;
+  flex: 1;
+  color: red;
+  justify-content: center;
+  align-items: center;
+}
+#boardList-md .boardRow td:nth-child(4){
+  display: flex;
+  flex: 1;
+  color: red;
+  justify-content: center;
+  align-items: center;
+}
+#boardList-md .boardRow td:nth-child(5){
+  display: flex;
+  flex: 1;
+  color: red;
+  justify-content: center;
+  align-items: center;
+}
+#boardList-md .boardRow td:nth-child(6){
+  display: flex;
+  flex: 1;
+  color: red;
+  justify-content: center;
+  align-items: center;
 }
 #searchBox tbody tr{ 
 
@@ -216,6 +257,7 @@ body{
   position: relative;
   display: flex;
   flex: 50;
+  justify-content: center;
 }
 #boardList-bot{
   position: relative;
@@ -284,4 +326,17 @@ input.error {
   font-family: "SCD5";
   /* font-weight: 300; */
   src: url("../src/fonts/SCDream5.otf") format("opentype");
+}
+
+@font-face{
+  font-family: 'gsanBold';
+  src : url('../src/fonts/GmarketSansTTFBold.ttf') format("truetype");
+}
+@font-face{
+  font-family: 'gsanLight';
+  src : url('../src/fonts/GmarketSansTTFLight.ttf') format("truetype");
+}
+@font-face{
+  font-family: 'gsanMedium';
+  src : url('../src/fonts/GmarketSansTTFMedium.ttf') format("truetype");
 }
